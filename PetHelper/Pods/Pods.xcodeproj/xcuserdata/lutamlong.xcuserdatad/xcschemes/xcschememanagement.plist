@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>GooglePlacesSearchController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>GoogleToolboxForMac.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,7 +62,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>49DBE49569C597B3A5804C03D6852985</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6D5CEDECD3D8DC52EA507E0431BDA8A0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>728A3103F72C0815EE8DACA05B236644</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -77,12 +92,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D9F19EDB0FAEFE0B916E203B35E21C48</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E85A968D47B23F621323AAF8448FD5E7</key>
+		<key>D424923B38A9B9256D68251269F79873</key>
 		<dict>
 			<key>primary</key>
 			<true/>

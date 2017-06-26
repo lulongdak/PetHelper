@@ -7,12 +7,22 @@
 //
 
 import UIKit
+import GoogleMaps
 
 class ViewController: UIViewController {
 
+        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+        
+    @IBAction func Gotomap(_ sender: Any) {
+        let storyboar = UIStoryboard(name: "MapView", bundle: Bundle.main)
+        let controller = storyboar.instantiateViewController(withIdentifier: "MapView")
+        self.present(controller, animated: true, completion: nil)
+
     }
 
     override func didReceiveMemoryWarning() {

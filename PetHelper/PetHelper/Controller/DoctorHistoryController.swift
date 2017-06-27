@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HistoryController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class DoctorHistoryController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBAction func back(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)

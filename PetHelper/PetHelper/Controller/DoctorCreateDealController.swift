@@ -16,7 +16,7 @@ extension String  {
     }
 }
 
-class CreateDealViewController: UIViewController {
+class DoctorCreateDealController: UIViewController {
     @IBOutlet weak var animal: UITextField!
     @IBOutlet weak var dealcost: UITextField!
     @IBOutlet weak var qty: UITextField!

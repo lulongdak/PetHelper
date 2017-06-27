@@ -10,9 +10,18 @@
 		7C726FE68CF7F686D0CF91DE /* Pods_PetHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184D2B6226A109553AD7C781 /* Pods_PetHelper.framework */; };
 		FE1B0D3D1F016D4E00BCB506 /* DoctorView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE1B0D3C1F016D4E00BCB506 /* DoctorView.storyboard */; };
 		FE1B0D3F1F016FEC00BCB506 /* DoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1B0D3E1F016FEC00BCB506 /* DoctorViewController.swift */; };
-		FE1B0D411F01722000BCB506 /* CreateDealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1B0D401F01722000BCB506 /* CreateDealViewController.swift */; };
-		FE1B0D431F0198B500BCB506 /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1B0D421F0198B500BCB506 /* HistoryController.swift */; };
+		FE1B0D411F01722000BCB506 /* DoctorCreateDealController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1B0D401F01722000BCB506 /* DoctorCreateDealController.swift */; };
+		FE1B0D431F0198B500BCB506 /* DoctorHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1B0D421F0198B500BCB506 /* DoctorHistoryController.swift */; };
 		FE1B0D451F01A1B400BCB506 /* FosterView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE1B0D441F01A1B400BCB506 /* FosterView.storyboard */; };
+		FE61821E1F02053B0056D95D /* DoctorHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE61821D1F02053B0056D95D /* DoctorHistoryCell.swift */; };
+		FE6182201F020B030056D95D /* FosterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE61821F1F020B030056D95D /* FosterViewController.swift */; };
+		FE6182221F020B480056D95D /* FosterCreateEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6182211F020B480056D95D /* FosterCreateEventController.swift */; };
+		FE6182241F020B760056D95D /* FosterHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6182231F020B760056D95D /* FosterHistoryController.swift */; };
+		FE6182261F020BF50056D95D /* FosterHistoryInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6182251F020BF50056D95D /* FosterHistoryInfoController.swift */; };
+		FE6182281F020CBF0056D95D /* DoctorHistoryInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6182271F020CBF0056D95D /* DoctorHistoryInfoController.swift */; };
+		FE61822C1F020E2A0056D95D /* FosterHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE61822B1F020E2A0056D95D /* FosterHistoryCell.swift */; };
+		FE6182311F0211E30056D95D /* MemberView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6182301F0211E30056D95D /* MemberView.storyboard */; };
+		FE6182351F0223360056D95D /* MenberActionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6182341F0223360056D95D /* MenberActionView.storyboard */; };
 		FEBA1B191EFFFE8700C66055 /* MapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEBA1B181EFFFE8700C66055 /* MapView.storyboard */; };
 		FEBA1B1B1F00012B00C66055 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBA1B1A1F00012B00C66055 /* MapViewController.swift */; };
 		FEBA1B1D1F001C2300C66055 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBA1B1C1F001C2300C66055 /* SearchResultsController.swift */; };
@@ -31,9 +40,18 @@
 		FE10C3311F010FBC00AAF00A /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		FE1B0D3C1F016D4E00BCB506 /* DoctorView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DoctorView.storyboard; sourceTree = "<group>"; };
 		FE1B0D3E1F016FEC00BCB506 /* DoctorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorViewController.swift; sourceTree = "<group>"; };
-		FE1B0D401F01722000BCB506 /* CreateDealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateDealViewController.swift; sourceTree = "<group>"; };
-		FE1B0D421F0198B500BCB506 /* HistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
+		FE1B0D401F01722000BCB506 /* DoctorCreateDealController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorCreateDealController.swift; sourceTree = "<group>"; };
+		FE1B0D421F0198B500BCB506 /* DoctorHistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorHistoryController.swift; sourceTree = "<group>"; };
 		FE1B0D441F01A1B400BCB506 /* FosterView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FosterView.storyboard; sourceTree = "<group>"; };
+		FE61821D1F02053B0056D95D /* DoctorHistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorHistoryCell.swift; sourceTree = "<group>"; };
+		FE61821F1F020B030056D95D /* FosterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FosterViewController.swift; sourceTree = "<group>"; };
+		FE6182211F020B480056D95D /* FosterCreateEventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FosterCreateEventController.swift; sourceTree = "<group>"; };
+		FE6182231F020B760056D95D /* FosterHistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FosterHistoryController.swift; sourceTree = "<group>"; };
+		FE6182251F020BF50056D95D /* FosterHistoryInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FosterHistoryInfoController.swift; sourceTree = "<group>"; };
+		FE6182271F020CBF0056D95D /* DoctorHistoryInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorHistoryInfoController.swift; sourceTree = "<group>"; };
+		FE61822B1F020E2A0056D95D /* FosterHistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FosterHistoryCell.swift; sourceTree = "<group>"; };
+		FE6182301F0211E30056D95D /* MemberView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MemberView.storyboard; sourceTree = "<group>"; };
+		FE6182341F0223360056D95D /* MenberActionView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MenberActionView.storyboard; sourceTree = "<group>"; };
 		FEBA1B181EFFFE8700C66055 /* MapView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapView.storyboard; sourceTree = "<group>"; };
 		FEBA1B1A1F00012B00C66055 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FEBA1B1C1F001C2300C66055 /* SearchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
@@ -76,6 +94,37 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FE61822D1F0211580056D95D /* Doctor */ = {
+			isa = PBXGroup;
+			children = (
+				FE1B0D401F01722000BCB506 /* DoctorCreateDealController.swift */,
+				FE61821D1F02053B0056D95D /* DoctorHistoryCell.swift */,
+				FE1B0D421F0198B500BCB506 /* DoctorHistoryController.swift */,
+				FE6182271F020CBF0056D95D /* DoctorHistoryInfoController.swift */,
+				FE1B0D3E1F016FEC00BCB506 /* DoctorViewController.swift */,
+			);
+			name = Doctor;
+			sourceTree = "<group>";
+		};
+		FE61822E1F02116F0056D95D /* Foster */ = {
+			isa = PBXGroup;
+			children = (
+				FE6182211F020B480056D95D /* FosterCreateEventController.swift */,
+				FE61822B1F020E2A0056D95D /* FosterHistoryCell.swift */,
+				FE6182231F020B760056D95D /* FosterHistoryController.swift */,
+				FE6182251F020BF50056D95D /* FosterHistoryInfoController.swift */,
+				FE61821F1F020B030056D95D /* FosterViewController.swift */,
+			);
+			name = Foster;
+			sourceTree = "<group>";
+		};
+		FE61822F1F02117F0056D95D /* Member */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Member;
+			sourceTree = "<group>";
+		};
 		FEE7C7721EEC4D9E00D75C03 = {
 			isa = PBXGroup;
 			children = (
@@ -112,12 +161,12 @@
 		FEE7C7901EEC4DE300D75C03 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FEE7C7801EEC4D9F00D75C03 /* ViewController.swift */,
+				FE61822F1F02117F0056D95D /* Member */,
+				FE61822E1F02116F0056D95D /* Foster */,
+				FE61822D1F0211580056D95D /* Doctor */,
 				FEBA1B1A1F00012B00C66055 /* MapViewController.swift */,
 				FEBA1B1C1F001C2300C66055 /* SearchResultsController.swift */,
-				FE1B0D3E1F016FEC00BCB506 /* DoctorViewController.swift */,
-				FE1B0D401F01722000BCB506 /* CreateDealViewController.swift */,
-				FE1B0D421F0198B500BCB506 /* HistoryController.swift */,
+				FEE7C7801EEC4D9F00D75C03 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -153,6 +202,8 @@
 				FEE7C7821EEC4D9F00D75C03 /* Main.storyboard */,
 				FEBA1B181EFFFE8700C66055 /* MapView.storyboard */,
 				FE1B0D441F01A1B400BCB506 /* FosterView.storyboard */,
+				FE6182301F0211E30056D95D /* MemberView.storyboard */,
+				FE6182341F0223360056D95D /* MenberActionView.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -224,8 +275,10 @@
 				FEE7C7961EEC533300D75C03 /* GoogleService-Info.plist in Resources */,
 				FE1B0D3D1F016D4E00BCB506 /* DoctorView.storyboard in Resources */,
 				FEE7C7861EEC4D9F00D75C03 /* Assets.xcassets in Resources */,
+				FE6182351F0223360056D95D /* MenberActionView.storyboard in Resources */,
 				FEBA1B191EFFFE8700C66055 /* MapView.storyboard in Resources */,
 				FEE7C7841EEC4D9F00D75C03 /* Main.storyboard in Resources */,
+				FE6182311F0211E30056D95D /* MemberView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,11 +339,18 @@
 			files = (
 				FEBA1B1D1F001C2300C66055 /* SearchResultsController.swift in Sources */,
 				FE1B0D3F1F016FEC00BCB506 /* DoctorViewController.swift in Sources */,
-				FE1B0D411F01722000BCB506 /* CreateDealViewController.swift in Sources */,
-				FE1B0D431F0198B500BCB506 /* HistoryController.swift in Sources */,
+				FE1B0D411F01722000BCB506 /* DoctorCreateDealController.swift in Sources */,
+				FE6182261F020BF50056D95D /* FosterHistoryInfoController.swift in Sources */,
+				FE1B0D431F0198B500BCB506 /* DoctorHistoryController.swift in Sources */,
+				FE61822C1F020E2A0056D95D /* FosterHistoryCell.swift in Sources */,
 				FEE7C7811EEC4D9F00D75C03 /* ViewController.swift in Sources */,
+				FE6182221F020B480056D95D /* FosterCreateEventController.swift in Sources */,
 				FEBA1B1B1F00012B00C66055 /* MapViewController.swift in Sources */,
+				FE6182281F020CBF0056D95D /* DoctorHistoryInfoController.swift in Sources */,
+				FE6182241F020B760056D95D /* FosterHistoryController.swift in Sources */,
 				FEE7C77F1EEC4D9F00D75C03 /* AppDelegate.swift in Sources */,
+				FE6182201F020B030056D95D /* FosterViewController.swift in Sources */,
+				FE61821E1F02053B0056D95D /* DoctorHistoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

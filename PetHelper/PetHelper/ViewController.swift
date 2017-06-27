@@ -24,6 +24,12 @@ class ViewController: UIViewController {
         self.present(controller, animated: true, completion: nil)
 
     }
+    @IBAction func gotoDoctorView(_ sender: Any) {
+        let storyboar = UIStoryboard(name: "DoctorView", bundle: Bundle.main)
+        let controller = storyboar.instantiateViewController(withIdentifier: "DoctorBoard")
+        self.present(controller, animated: true, completion: nil)
+
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		7C726FE68CF7F686D0CF91DE /* Pods_PetHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184D2B6226A109553AD7C781 /* Pods_PetHelper.framework */; };
+		FE1B0D3D1F016D4E00BCB506 /* DoctorView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE1B0D3C1F016D4E00BCB506 /* DoctorView.storyboard */; };
+		FE1B0D3F1F016FEC00BCB506 /* DoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1B0D3E1F016FEC00BCB506 /* DoctorViewController.swift */; };
+		FE1B0D411F01722000BCB506 /* CreateDealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1B0D401F01722000BCB506 /* CreateDealViewController.swift */; };
+		FE1B0D431F0198B500BCB506 /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1B0D421F0198B500BCB506 /* HistoryController.swift */; };
+		FE1B0D451F01A1B400BCB506 /* FosterView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE1B0D441F01A1B400BCB506 /* FosterView.storyboard */; };
 		FEBA1B191EFFFE8700C66055 /* MapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEBA1B181EFFFE8700C66055 /* MapView.storyboard */; };
 		FEBA1B1B1F00012B00C66055 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBA1B1A1F00012B00C66055 /* MapViewController.swift */; };
 		FEBA1B1D1F001C2300C66055 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBA1B1C1F001C2300C66055 /* SearchResultsController.swift */; };
@@ -24,6 +29,11 @@
 		2AF514B41981E9B7020E7AB7 /* Pods-PetHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PetHelper/Pods-PetHelper.debug.xcconfig"; sourceTree = "<group>"; };
 		A0502D16141E9B53A755CFC9 /* Pods-PetHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetHelper/Pods-PetHelper.release.xcconfig"; sourceTree = "<group>"; };
 		FE10C3311F010FBC00AAF00A /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
+		FE1B0D3C1F016D4E00BCB506 /* DoctorView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DoctorView.storyboard; sourceTree = "<group>"; };
+		FE1B0D3E1F016FEC00BCB506 /* DoctorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorViewController.swift; sourceTree = "<group>"; };
+		FE1B0D401F01722000BCB506 /* CreateDealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateDealViewController.swift; sourceTree = "<group>"; };
+		FE1B0D421F0198B500BCB506 /* HistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
+		FE1B0D441F01A1B400BCB506 /* FosterView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FosterView.storyboard; sourceTree = "<group>"; };
 		FEBA1B181EFFFE8700C66055 /* MapView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapView.storyboard; sourceTree = "<group>"; };
 		FEBA1B1A1F00012B00C66055 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FEBA1B1C1F001C2300C66055 /* SearchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
@@ -105,6 +115,9 @@
 				FEE7C7801EEC4D9F00D75C03 /* ViewController.swift */,
 				FEBA1B1A1F00012B00C66055 /* MapViewController.swift */,
 				FEBA1B1C1F001C2300C66055 /* SearchResultsController.swift */,
+				FE1B0D3E1F016FEC00BCB506 /* DoctorViewController.swift */,
+				FE1B0D401F01722000BCB506 /* CreateDealViewController.swift */,
+				FE1B0D421F0198B500BCB506 /* HistoryController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -135,9 +148,11 @@
 		FEE7C7941EEC4DE300D75C03 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FE1B0D3C1F016D4E00BCB506 /* DoctorView.storyboard */,
 				FEE7C7871EEC4D9F00D75C03 /* LaunchScreen.storyboard */,
 				FEE7C7821EEC4D9F00D75C03 /* Main.storyboard */,
 				FEBA1B181EFFFE8700C66055 /* MapView.storyboard */,
+				FE1B0D441F01A1B400BCB506 /* FosterView.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -204,8 +219,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE1B0D451F01A1B400BCB506 /* FosterView.storyboard in Resources */,
 				FEE7C7891EEC4D9F00D75C03 /* LaunchScreen.storyboard in Resources */,
 				FEE7C7961EEC533300D75C03 /* GoogleService-Info.plist in Resources */,
+				FE1B0D3D1F016D4E00BCB506 /* DoctorView.storyboard in Resources */,
 				FEE7C7861EEC4D9F00D75C03 /* Assets.xcassets in Resources */,
 				FEBA1B191EFFFE8700C66055 /* MapView.storyboard in Resources */,
 				FEE7C7841EEC4D9F00D75C03 /* Main.storyboard in Resources */,
@@ -268,6 +285,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEBA1B1D1F001C2300C66055 /* SearchResultsController.swift in Sources */,
+				FE1B0D3F1F016FEC00BCB506 /* DoctorViewController.swift in Sources */,
+				FE1B0D411F01722000BCB506 /* CreateDealViewController.swift in Sources */,
+				FE1B0D431F0198B500BCB506 /* HistoryController.swift in Sources */,
 				FEE7C7811EEC4D9F00D75C03 /* ViewController.swift in Sources */,
 				FEBA1B1B1F00012B00C66055 /* MapViewController.swift in Sources */,
 				FEE7C77F1EEC4D9F00D75C03 /* AppDelegate.swift in Sources */,

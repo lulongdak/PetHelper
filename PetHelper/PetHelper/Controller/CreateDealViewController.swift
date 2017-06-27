@@ -1,0 +1,136 @@
+//
+//  CreateDealViewController.swift
+//  PetHelper
+//
+//  Created by Lu Tam Long on 6/26/17.
+//  Copyright © 2017 SUAY555. All rights reserved.
+//
+
+import UIKit
+
+extension String  {
+    var isNumber : Bool {
+        get{
+            return !self.isEmpty && self.rangeOfCharacter(from: CharacterSet.decimalDigits.inverted) == nil
+        }
+    }
+}
+
+class CreateDealViewController: UIViewController {
+    @IBOutlet weak var animal: UITextField!
+    @IBOutlet weak var dealcost: UITextField!
+    @IBOutlet weak var qty: UITextField!
+    @IBOutlet weak var enddate: UITextField!
+    @IBOutlet weak var startdate: UITextField!
+    
+    @IBAction func back(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+        
+    }
+    
+    @IBAction func Create_Deal(_ sender: Any) {
+        let txtqty = qty.text!
+        let txtenddate = enddate.text!
+        let txtstartdate = startdate.text!
+        let txtdeal = dealcost.text!
+        let txtanimal = animal.text!
+        if (txtqty.isNumber == false || txtdeal.isNumber == false){
+            print("Quantity and deal must be a number");
+        }
+        else
+        {
+            self.navigationController?.popViewController(animated: true)
+        }
+        
+    }
+    /*** Input start date */
+    let m_startdate = UIDatePicker()
+    
+    func createstartdate(){
+        
+        //format date of birth
+        m_startdate.datePickerMode = .date
+        //toolbar
+        let toolbar=UIToolbar()
+        toolbar.sizeToFit()
+        
+        //bar button item
+        let btn_done=UIBarButtonItem(barButtonSystemItem: .done,target: nil,action: #selector (donePress_Start))
+        toolbar.setItems([btn_done], animated: false)
+        startdate.inputAccessoryView=toolbar
+        
+        //
+        startdate.inputView=m_startdate
+        
+    }
+    
+    func donePress_Start()
+    {
+        let dateformatter=DateFormatter()
+        dateformatter.dateStyle = .long
+        dateformatter.timeStyle = .none
+        dateformatter.dateFormat="dd-MM-yyyy"
+        
+        startdate.text=dateformatter.string(from: m_startdate.date)
+        self.view.endEditing(true)
+    }
+    
+    /*** Input end date */
+    let m_enddate = UIDatePicker()
+    
+    func createenddate(){
+        
+        //format date of birth
+        m_enddate.datePickerMode = .date
+        //toolbar
+        let toolbar=UIToolbar()
+        toolbar.sizeToFit()
+        
+        //bar button item
+        let btn_done=UIBarButtonItem(barButtonSystemItem: .done,target: nil,action: #selector (donePress_End))
+        toolbar.setItems([btn_done], animated: false)
+        enddate.inputAccessoryView=toolbar
+        
+        //
+        enddate.inputView=m_enddate
+        
+    }
+    
+    func donePress_End()
+    {
+        let dateformatter=DateFormatter()
+        dateformatter.dateStyle = .long
+        dateformatter.timeStyle = .none
+        dateformatter.dateFormat="dd-MM-yyyy"
+        
+        enddate.text=dateformatter.string(from: m_enddate.date)
+        self.view.endEditing(true)
+    }
+
+    
+    override func viewDidLoad() {
+    
+        super.viewDidLoad()
+        self.createenddate()
+        self.createstartdate()
+
+        // Do any additional setup after loading the view.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}

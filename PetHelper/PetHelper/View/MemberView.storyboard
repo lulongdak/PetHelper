@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +13,7 @@
         <!--Navigation Controller-->
         <scene sceneID="79E-bb-anO">
             <objects>
-                <navigationController id="NpD-pl-aqS" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MemberBoard" id="NpD-pl-aqS" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fHW-Ii-Rc7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -29,7 +29,7 @@
         <!--MENU-->
         <scene sceneID="vPR-NM-LgN">
             <objects>
-                <viewController id="5v0-fc-0pI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemberMainMenu" id="5v0-fc-0pI" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OdG-eE-elG"/>
                         <viewControllerLayoutGuide type="bottom" id="eKb-Gv-vqw"/>
@@ -59,7 +59,7 @@
         <!--USER INFORMATION-->
         <scene sceneID="ZGV-pr-Fbb">
             <objects>
-                <viewController id="9k2-K8-nS4" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemberInfo" id="9k2-K8-nS4" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wbN-ax-CyE"/>
                         <viewControllerLayoutGuide type="bottom" id="6CI-Jr-068"/>
@@ -200,7 +200,7 @@
         <!--HISTORY-->
         <scene sceneID="Raw-HY-ccB">
             <objects>
-                <viewController id="zdu-AS-ir6" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemberHistory" id="zdu-AS-ir6" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IVW-eA-fsh"/>
                         <viewControllerLayoutGuide type="bottom" id="WcL-2Z-b7r"/>
@@ -270,12 +270,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iin-Pb-p0J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1673" y="115"/>
+            <point key="canvasLocation" x="1673" y="113"/>
         </scene>
         <!--SALES/GIVEAWAY-->
         <scene sceneID="Ees-v0-ICT">
             <objects>
-                <viewController id="Xp9-7O-PqG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemberSale" id="Xp9-7O-PqG" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KP3-Wp-adi"/>
                         <viewControllerLayoutGuide type="bottom" id="IGn-cn-EDV"/>
@@ -292,7 +292,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YVl-MD-oxB" id="AxP-pb-uR4">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -318,7 +318,7 @@
         <!--DEAL-->
         <scene sceneID="jRH-AW-N64">
             <objects>
-                <viewController id="Lev-FK-q01" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemberDeal" id="Lev-FK-q01" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eZe-ye-xVS"/>
                         <viewControllerLayoutGuide type="bottom" id="PR7-YT-Ysn"/>
@@ -335,7 +335,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="12y-Ue-Quy" id="a5S-6T-Ecp">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -361,7 +361,7 @@
         <!--FOSTER-->
         <scene sceneID="Uwt-un-zYO">
             <objects>
-                <viewController id="qP0-4N-Fhk" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemberFoster" id="qP0-4N-Fhk" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ts0-gi-aYv"/>
                         <viewControllerLayoutGuide type="bottom" id="6X1-tB-IPS"/>
@@ -378,7 +378,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7H8-Ys-Ta1" id="fPp-Nm-vpP">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -404,7 +404,7 @@
         <!--LOST PET-->
         <scene sceneID="iGN-t8-S8W">
             <objects>
-                <viewController id="eTe-zE-mba" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemberLost" id="eTe-zE-mba" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K5o-r9-Fjh"/>
                         <viewControllerLayoutGuide type="bottom" id="pvg-7d-AMT"/>
@@ -421,7 +421,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XFx-eF-EWe" id="4jg-zH-09C">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -447,7 +447,7 @@
         <!--BUY/TAKE-->
         <scene sceneID="pRF-UA-iy2">
             <objects>
-                <viewController id="uV5-a6-suw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemberTrade" id="uV5-a6-suw" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lP8-Qw-RUY"/>
                         <viewControllerLayoutGuide type="bottom" id="jX3-Hp-tcd"/>
@@ -464,7 +464,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eCt-6o-Xg6" id="pyY-ix-o42">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>

@@ -57,7 +57,66 @@ class ViewController: UIViewController {
         Auth.auth().signIn(withEmail: txfEmail.text!,password: txfPassword.text!) { user, error in
             if error == nil
             {
-                    self.performSegue(withIdentifier: "loginSuccess", sender: nil)
+                
+                
+                
+                //if first time logged in
+                let rootRef = Database.database().reference()
+               
+                
+                let userID = Auth.auth().currentUser?.uid
+                rootRef.child("user_info").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+                    // Get user value
+                    let value = snapshot.value as? NSDictionary
+                    let userRole = value?["userRole"] as? String ?? ""
+                    let firstTime = value?["isFirstTime"] as? String ?? ""
+                    
+                    if(userRole.isEqual("DOCTOR"))
+                    {
+                        let storyboard = UIStoryboard(name: "DoctorView", bundle: Bundle.main)
+                        let controller = storyboard.instantiateViewController(withIdentifier: "DoctorBoard")
+                        self.present(controller, animated: true, completion: nil)
+                    }
+                    else if (userRole.isEqual("FOSTER"))
+                    {
+                        let storyboard = UIStoryboard(name: "FosterView", bundle: Bundle.main)
+                        let controller = storyboard.instantiateViewController(withIdentifier: "FosterBoard")
+                        self.present(controller, animated: true, completion: nil)
+                    }
+                    else if (userRole.isEqual("MEMBER"))
+                    {
+                        if (firstTime.isEqual("true"))
+                        {
+
+                                let alertController = UIAlertController(title: "Update information", message: "Look like this is the first time you logged in. Please update your information before proceeding",preferredStyle: .alert)
+                        
+                                let defaultAction = UIAlertAction(title: "OK", style: .default) { action in
+                                    let storyboard = UIStoryboard(name: "MemberView", bundle: Bundle.main)
+                                    let controller = storyboard.instantiateViewController(withIdentifier: "MemberInfo")
+                                    self.present(controller, animated: true, completion: nil)
+                                }
+                                alertController.addAction(defaultAction)
+                        
+                                self.present(alertController, animated: true, completion: nil)
+
+                        
+                        
+                        }
+                        else
+                        {
+                            let storyboard = UIStoryboard(name: "MemberView", bundle: Bundle.main)
+                            let controller = storyboard.instantiateViewController(withIdentifier: "MemberBoard")
+                            self.present(controller, animated: true, completion: nil)
+                        
+                        }
+                    }
+
+
+                }) { (error) in
+                    print(error.localizedDescription)
+                }
+                
+                
             }
             else
             {
@@ -87,7 +146,11 @@ class ViewController: UIViewController {
             let passwordField = alert.textFields![1]
             let phoneField = alert.textFields![2]
             
-            Auth.auth().createUser(withEmail: emailField.text!,password: passwordField.text!) { user, error in
+            let email = emailField.text!
+            let password = passwordField.text!
+            let phone = phoneField.text!
+            
+            Auth.auth().createUser(withEmail: email,password: password) { user, error in
                 if error == nil {
                     
                     let alertController = UIAlertController(title: "Success", message: "Account created!",preferredStyle: .alert)
@@ -99,14 +162,28 @@ class ViewController: UIViewController {
                     Auth.auth().signIn(withEmail: self.txfEmail.text!,password: self.txfPassword.text!)
                     
                     let rootRef = Database.database().reference()
-                    
+                    let firstTime = "true"
                     //update basic info
-                  
+                    let userRole = "member"
                     let key = rootRef.child("user_info").child(Auth.auth().currentUser!.uid).key
-                    let post = ["email": emailField, "phoneNumber": phoneField, "userRole": "member"]
+                    let post = ["email": email,
+                                "phoneNumber": phone,
+                                "userRole": userRole,
+                                "isFirstTime": firstTime]
                     let childupdate = ["/\(key)": post]
                     rootRef.child("user_info").updateChildValues(childupdate)
                     
+                }
+                else
+                {
+                    //Tells the user that there is an error and then gets firebase to tell them the error
+                    let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                    
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    alertController.addAction(defaultAction)
+                    
+                    self.present(alertController, animated: true, completion: nil)
+
                 }
             }
         }

@@ -17,4 +17,5 @@ class UserModel: NSObject
     var email: String?
     var profilePic: String?
     var userRole: String?
+    var isFirstTime: String?
 }

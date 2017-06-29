@@ -10,8 +10,7 @@ import Foundation
 
 class UserModel: NSObject
 {
-    var firstName: String?
-    var lastName: String?
+    var userName: String?
     var phoneNumber: String?
     var address: String?
     var email: String?

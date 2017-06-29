@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7C726FE68CF7F686D0CF91DE /* Pods_PetHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184D2B6226A109553AD7C781 /* Pods_PetHelper.framework */; };
+		9F63F2D51F04C2AE006E8C56 /* MemberInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F63F2D41F04C2AE006E8C56 /* MemberInfoController.swift */; };
 		9FAC90DF1F037E86008149F5 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAC90DE1F037E86008149F5 /* UserModel.swift */; };
 		FE1B0D3D1F016D4E00BCB506 /* DoctorView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE1B0D3C1F016D4E00BCB506 /* DoctorView.storyboard */; };
 		FE1B0D3F1F016FEC00BCB506 /* DoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1B0D3E1F016FEC00BCB506 /* DoctorViewController.swift */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		184D2B6226A109553AD7C781 /* Pods_PetHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AF514B41981E9B7020E7AB7 /* Pods-PetHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PetHelper/Pods-PetHelper.debug.xcconfig"; sourceTree = "<group>"; };
+		9F63F2D41F04C2AE006E8C56 /* MemberInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberInfoController.swift; sourceTree = "<group>"; };
 		9FAC90DB1F035BED008149F5 /* PetHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PetHelper.entitlements; sourceTree = "<group>"; };
 		9FAC90DE1F037E86008149F5 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserModel.swift; path = PetHelper/Resources/UserModel.swift; sourceTree = SOURCE_ROOT; };
 		A0502D16141E9B53A755CFC9 /* Pods-PetHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetHelper/Pods-PetHelper.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		FE61822F1F02117F0056D95D /* Member */ = {
 			isa = PBXGroup;
 			children = (
+				9F63F2D41F04C2AE006E8C56 /* MemberInfoController.swift */,
 			);
 			name = Member;
 			sourceTree = "<group>";
@@ -251,6 +254,9 @@
 						DevelopmentTeam = 4JCQGNL433;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
 							com.apple.Keychain = {
 								enabled = 1;
 							};
@@ -361,6 +367,7 @@
 				FE6182241F020B760056D95D /* FosterHistoryController.swift in Sources */,
 				FEE7C77F1EEC4D9F00D75C03 /* AppDelegate.swift in Sources */,
 				FE6182201F020B030056D95D /* FosterViewController.swift in Sources */,
+				9F63F2D51F04C2AE006E8C56 /* MemberInfoController.swift in Sources */,
 				9FAC90DF1F037E86008149F5 /* UserModel.swift in Sources */,
 				FE61821E1F02053B0056D95D /* DoctorHistoryCell.swift in Sources */,
 			);

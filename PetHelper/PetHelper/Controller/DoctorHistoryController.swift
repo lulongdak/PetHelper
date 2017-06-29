@@ -14,8 +14,9 @@ class DoctorHistoryController: UIViewController, UITableViewDataSource, UITableV
         self.navigationController?.popViewController(animated: true)
     }
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
+        navigationController?.navigationBar.barTintColor = UIColor(red: 62/255, green: 167/255, blue: 53/255, alpha: 1)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

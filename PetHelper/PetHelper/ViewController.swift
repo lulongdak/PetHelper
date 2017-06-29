@@ -98,9 +98,6 @@ class ViewController: UIViewController {
                                 alertController.addAction(defaultAction)
                         
                                 self.present(alertController, animated: true, completion: nil)
-
-                        
-                        
                         }
                         else
                         {
@@ -163,13 +160,18 @@ class ViewController: UIViewController {
                     
                     let rootRef = Database.database().reference()
                     let firstTime = "true"
+                    
                     //update basic info
-                    let userRole = "member"
+                    let userRole = "MEMBER"
+                    let address = ""
+                    let userName = ""
                     let key = rootRef.child("user_info").child(Auth.auth().currentUser!.uid).key
                     let post = ["email": email,
                                 "phoneNumber": phone,
                                 "userRole": userRole,
-                                "isFirstTime": firstTime]
+                                "isFirstTime": firstTime,
+                                "address": address,
+                                "userName": userName]
                     let childupdate = ["/\(key)": post]
                     rootRef.child("user_info").updateChildValues(childupdate)
                     

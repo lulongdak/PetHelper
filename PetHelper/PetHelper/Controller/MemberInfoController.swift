@@ -81,7 +81,8 @@ UINavigationControllerDelegate {
                 print("Download failed")
               //   self.AlertNotice(title: "Error", message: (error?.localizedDescription)!)
             }
-            
+        
+        
             
         }
         

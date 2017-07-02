@@ -121,28 +121,30 @@ UINavigationControllerDelegate {
         let childupdate = ["/\(key)": post]
         rootRef.child("user_info").updateChildValues(childupdate)
         
-        
+        if (profilePic != nil){
         let path = "Avatar/" + Auth.auth().currentUser!.uid + "/userprofile.jpg"          //path save file in Storage, name folder is your ID user
         let storageRef = Storage.storage().reference(withPath: path )   // Create reference with path
         let metadata = StorageMetadata()                                //Create metadata of Storage file
         metadata.contentType="image/jpeg"                               //Content type
-        storageRef.putData(UIImageJPEGRepresentation(profilePic!, 1.0)!, metadata: metadata) { (data,error) in //Upload file
-            if error == nil {                       // if uploading not error, file is upload successfully
-                print("Upload success!")
-             //   self.AlertNotice(title: "Upload", message: "Upload Success")        //notice "Upload success"
+        
+            storageRef.putData(UIImageJPEGRepresentation(profilePic!, 1.0)!, metadata: metadata) { (data,error) in //Upload file
+                if error == nil {                       // if uploading not error, file is upload successfully
+                    print("Upload success!")
+                    //   self.AlertNotice(title: "Upload", message: "Upload Success")        //notice "Upload success"
                 
-            }
-            else{
-                print(error?.localizedDescription ?? "Error")
-                print("Upload failed!")
-              //  self.AlertNotice(title: "Upload", message: (error?.localizedDescription)!)
-            }
+                }
+                else{
+                    print(error?.localizedDescription ?? "Error")
+                    print("Upload failed!")
+                    //  self.AlertNotice(title: "Upload", message: (error?.localizedDescription)!)
+                }
             
+            }
         }
         
         //transit to main member menu
             let storyboard = UIStoryboard(name: "MemberView", bundle: Bundle.main)
-              let controller = storyboard.instantiateViewController(withIdentifier: "MemberBoard")
+            let controller = storyboard.instantiateViewController(withIdentifier: "MemberBoard")
             self.present(controller, animated: true, completion: nil)
         
 

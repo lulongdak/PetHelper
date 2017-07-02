@@ -27,6 +27,7 @@
 		FEBA1B191EFFFE8700C66055 /* MapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEBA1B181EFFFE8700C66055 /* MapView.storyboard */; };
 		FEBA1B1B1F00012B00C66055 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBA1B1A1F00012B00C66055 /* MapViewController.swift */; };
 		FEBA1B1D1F001C2300C66055 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBA1B1C1F001C2300C66055 /* SearchResultsController.swift */; };
+		FEE0552F1F0905BE0062816B /* AdminView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE0552E1F0905BE0062816B /* AdminView.storyboard */; };
 		FEE7C77F1EEC4D9F00D75C03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE7C77E1EEC4D9F00D75C03 /* AppDelegate.swift */; };
 		FEE7C7811EEC4D9F00D75C03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE7C7801EEC4D9F00D75C03 /* ViewController.swift */; };
 		FEE7C7841EEC4D9F00D75C03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE7C7821EEC4D9F00D75C03 /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 		FEBA1B181EFFFE8700C66055 /* MapView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapView.storyboard; sourceTree = "<group>"; };
 		FEBA1B1A1F00012B00C66055 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FEBA1B1C1F001C2300C66055 /* SearchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
+		FEE0552E1F0905BE0062816B /* AdminView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AdminView.storyboard; sourceTree = "<group>"; };
 		FEE7C77B1EEC4D9F00D75C03 /* PetHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE7C77E1EEC4D9F00D75C03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEE7C7801EEC4D9F00D75C03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				FE1B0D441F01A1B400BCB506 /* FosterView.storyboard */,
 				FE6182301F0211E30056D95D /* MemberView.storyboard */,
 				FE6182341F0223360056D95D /* MenberActionView.storyboard */,
+				FEE0552E1F0905BE0062816B /* AdminView.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				FEE7C7861EEC4D9F00D75C03 /* Assets.xcassets in Resources */,
 				FE6182351F0223360056D95D /* MenberActionView.storyboard in Resources */,
 				FEBA1B191EFFFE8700C66055 /* MapView.storyboard in Resources */,
+				FEE0552F1F0905BE0062816B /* AdminView.storyboard in Resources */,
 				FEE7C7841EEC4D9F00D75C03 /* Main.storyboard in Resources */,
 				FE6182311F0211E30056D95D /* MemberView.storyboard in Resources */,
 			);

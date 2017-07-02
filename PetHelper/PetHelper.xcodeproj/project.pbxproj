@@ -32,6 +32,9 @@
 		FEBA1B1B1F00012B00C66055 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBA1B1A1F00012B00C66055 /* MapViewController.swift */; };
 		FEBA1B1D1F001C2300C66055 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBA1B1C1F001C2300C66055 /* SearchResultsController.swift */; };
 		FEE0552F1F0905BE0062816B /* AdminView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE0552E1F0905BE0062816B /* AdminView.storyboard */; };
+		FEE055321F093D5F0062816B /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE055311F093D5F0062816B /* AdminViewController.swift */; };
+		FEE055341F093D940062816B /* AdminManagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE055331F093D940062816B /* AdminManagerController.swift */; };
+		FEE055361F097B600062816B /* UpdateRoleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE055351F097B600062816B /* UpdateRoleController.swift */; };
 		FEE7C77F1EEC4D9F00D75C03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE7C77E1EEC4D9F00D75C03 /* AppDelegate.swift */; };
 		FEE7C7811EEC4D9F00D75C03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE7C7801EEC4D9F00D75C03 /* ViewController.swift */; };
 		FEE7C7841EEC4D9F00D75C03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE7C7821EEC4D9F00D75C03 /* Main.storyboard */; };
@@ -70,6 +73,9 @@
 		FEBA1B1A1F00012B00C66055 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FEBA1B1C1F001C2300C66055 /* SearchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
 		FEE0552E1F0905BE0062816B /* AdminView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AdminView.storyboard; sourceTree = "<group>"; };
+		FEE055311F093D5F0062816B /* AdminViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
+		FEE055331F093D940062816B /* AdminManagerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminManagerController.swift; sourceTree = "<group>"; };
+		FEE055351F097B600062816B /* UpdateRoleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateRoleController.swift; sourceTree = "<group>"; };
 		FEE7C77B1EEC4D9F00D75C03 /* PetHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE7C77E1EEC4D9F00D75C03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEE7C7801EEC4D9F00D75C03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +150,16 @@
 			name = Member;
 			sourceTree = "<group>";
 		};
+		FEE055301F093D170062816B /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				FEE055311F093D5F0062816B /* AdminViewController.swift */,
+				FEE055331F093D940062816B /* AdminManagerController.swift */,
+				FEE055351F097B600062816B /* UpdateRoleController.swift */,
+			);
+			name = Admin;
+			sourceTree = "<group>";
+		};
 		FEE7C7721EEC4D9E00D75C03 = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +197,7 @@
 		FEE7C7901EEC4DE300D75C03 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FEE055301F093D170062816B /* Admin */,
 				FE61822F1F02117F0056D95D /* Member */,
 				FE61822E1F02116F0056D95D /* Foster */,
 				FE61822D1F0211580056D95D /* Doctor */,
@@ -387,7 +404,10 @@
 				FEE7C77F1EEC4D9F00D75C03 /* AppDelegate.swift in Sources */,
 				FE6182201F020B030056D95D /* FosterViewController.swift in Sources */,
 				9F63F2D51F04C2AE006E8C56 /* MemberInfoController.swift in Sources */,
+				FEE055341F093D940062816B /* AdminManagerController.swift in Sources */,
+				FEE055361F097B600062816B /* UpdateRoleController.swift in Sources */,
 				9F48623B1F08DD6700B3F956 /* SaleInfoController.swift in Sources */,
+				FEE055321F093D5F0062816B /* AdminViewController.swift in Sources */,
 				9FAC90DF1F037E86008149F5 /* UserModel.swift in Sources */,
 				FE61821E1F02053B0056D95D /* DoctorHistoryCell.swift in Sources */,
 			);

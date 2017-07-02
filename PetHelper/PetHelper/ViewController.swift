@@ -83,6 +83,12 @@ class ViewController: UIViewController {
                         let controller = storyboard.instantiateViewController(withIdentifier: "FosterBoard")
                         self.present(controller, animated: true, completion: nil)
                     }
+                    else if (userRole.isEqual("ADMIN"))
+                    {
+                        let storyboard = UIStoryboard(name: "AdminView", bundle: Bundle.main)
+                        let controller = storyboard.instantiateViewController(withIdentifier: "AdminView")
+                        self.present(controller, animated: true, completion: nil)
+                    }
                     else if (userRole.isEqual("MEMBER"))
                     {
                         if (firstTime.isEqual("true"))

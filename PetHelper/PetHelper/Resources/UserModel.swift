@@ -17,4 +17,10 @@ class UserModel: NSObject
     var profilePic: String?
     var userRole: String?
     var isFirstTime: String?
+    //var id:String?
+}
+
+struct table_account {
+    var id:String?
+    var email:String?
 }

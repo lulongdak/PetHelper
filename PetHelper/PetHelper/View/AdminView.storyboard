@@ -12,7 +12,7 @@
         <!--Navigation Controller-->
         <scene sceneID="xeG-RZ-LLI">
             <objects>
-                <navigationController id="yYE-G5-MVC" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="AdminView" id="yYE-G5-MVC" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pbS-9k-H5l">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -28,7 +28,7 @@
         <!--ADMIN-->
         <scene sceneID="4ff-W7-xPz">
             <objects>
-                <viewController id="aAf-XM-bR9" sceneMemberID="viewController">
+                <viewController id="aAf-XM-bR9" customClass="AdminViewController" customModule="PetHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MgT-6f-wSh"/>
                         <viewControllerLayoutGuide type="bottom" id="UG2-Ov-vSY"/>
@@ -57,7 +57,7 @@
         <!--MANAGE ACCOUNT-->
         <scene sceneID="SbU-MS-yhL">
             <objects>
-                <viewController id="sUc-ee-BDU" sceneMemberID="viewController">
+                <viewController id="sUc-ee-BDU" customClass="AdminManagerController" customModule="PetHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Uhi-Gt-oSA"/>
                         <viewControllerLayoutGuide type="bottom" id="ktu-qe-br2"/>
@@ -101,11 +101,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="MANAGE ACCOUNT" id="vLU-Pp-Wcz">
-                        <barButtonItem key="leftBarButtonItem" image="back" id="g6Z-vz-mwY"/>
+                        <barButtonItem key="leftBarButtonItem" image="back" id="g6Z-vz-mwY">
+                            <connections>
+                                <action selector="back:" destination="sUc-ee-BDU" id="QqJ-1f-Nrk"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="mytable" destination="mae-PO-0fy" id="wK4-NV-XbY"/>
                         <outlet property="searchDisplayController" destination="yH0-8o-aSC" id="zHV-jw-aNh"/>
-                        <segue destination="L1Q-xO-QR8" kind="show" id="vse-r5-omw"/>
+                        <segue destination="L1Q-xO-QR8" kind="show" identifier="AccountInfo" id="vse-r5-omw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gAB-7j-Yy8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -124,7 +129,7 @@
         <!--ACCOUNT INFO-->
         <scene sceneID="BFT-oU-dzG">
             <objects>
-                <viewController id="L1Q-xO-QR8" sceneMemberID="viewController">
+                <viewController id="L1Q-xO-QR8" customClass="UpdateRoleController" customModule="PetHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="z9l-Qc-h2m"/>
                         <viewControllerLayoutGuide type="bottom" id="wyp-Qt-Xck"/>
@@ -216,7 +221,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ni-dN-JSe">
                                 <rect key="frame" x="111" y="349" width="99" height="30"/>
                                 <state key="normal" title="UPDATE ROLE"/>
+                                <connections>
+                                    <action selector="UpdateRole:" destination="L1Q-xO-QR8" eventType="touchUpInside" id="mBq-dd-7cU"/>
+                                </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oNz-i3-Pgy">
+                                <rect key="frame" x="0.0" y="419" width="320" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="JXo-jU-Dcr"/>
+                                </constraints>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -225,12 +239,14 @@
                             <constraint firstAttribute="trailing" secondItem="ty1-XC-8FT" secondAttribute="trailing" constant="20" id="4kN-56-LnD"/>
                             <constraint firstItem="nYH-ce-8Q7" firstAttribute="leading" secondItem="aao-5M-IaE" secondAttribute="leading" constant="20" id="9Ku-Dd-XJr"/>
                             <constraint firstItem="6Dc-ao-by2" firstAttribute="leading" secondItem="LeT-PF-JAx" secondAttribute="trailing" constant="10" id="9sD-JZ-8Pa"/>
+                            <constraint firstAttribute="trailing" secondItem="oNz-i3-Pgy" secondAttribute="trailing" id="Cbe-r4-HjU"/>
                             <constraint firstItem="0ni-dN-JSe" firstAttribute="centerX" secondItem="aao-5M-IaE" secondAttribute="centerX" id="IeV-W0-3oP"/>
                             <constraint firstItem="tn3-Lf-mCj" firstAttribute="leading" secondItem="nYH-ce-8Q7" secondAttribute="trailing" constant="10" id="LHz-FG-Ba4"/>
                             <constraint firstItem="m1b-lb-PG3" firstAttribute="leading" secondItem="aao-5M-IaE" secondAttribute="leading" constant="20" id="OLo-TI-Mqn"/>
                             <constraint firstItem="m3e-sT-Xcj" firstAttribute="leading" secondItem="m1b-lb-PG3" secondAttribute="trailing" constant="10" id="P2i-gW-86l"/>
                             <constraint firstItem="bTq-5a-Slp" firstAttribute="leading" secondItem="aao-5M-IaE" secondAttribute="leading" constant="20" id="PD9-MP-r32"/>
                             <constraint firstItem="LeT-PF-JAx" firstAttribute="leading" secondItem="aao-5M-IaE" secondAttribute="leading" constant="20" id="Raw-L5-C1m"/>
+                            <constraint firstItem="oNz-i3-Pgy" firstAttribute="centerX" secondItem="aao-5M-IaE" secondAttribute="centerX" id="Sh7-Lk-R7V"/>
                             <constraint firstItem="ty1-XC-8FT" firstAttribute="leading" secondItem="bTq-5a-Slp" secondAttribute="trailing" constant="10" id="Swc-g9-Ls1"/>
                             <constraint firstItem="tn3-Lf-mCj" firstAttribute="top" secondItem="z9l-Qc-h2m" secondAttribute="bottom" constant="40" id="TiQ-yj-R42"/>
                             <constraint firstAttribute="trailing" secondItem="6Dc-ao-by2" secondAttribute="trailing" constant="20" id="XNg-cu-DtG"/>
@@ -242,6 +258,8 @@
                             <constraint firstItem="nYH-ce-8Q7" firstAttribute="top" secondItem="z9l-Qc-h2m" secondAttribute="bottom" constant="40" id="h2k-HW-qBu"/>
                             <constraint firstItem="tXO-Jm-fCS" firstAttribute="top" secondItem="bTq-5a-Slp" secondAttribute="bottom" constant="15" id="mSZ-jo-hNF"/>
                             <constraint firstItem="6Dc-ao-by2" firstAttribute="leading" secondItem="LeT-PF-JAx" secondAttribute="trailing" constant="10" id="p1v-oC-MZg"/>
+                            <constraint firstItem="oNz-i3-Pgy" firstAttribute="top" secondItem="0ni-dN-JSe" secondAttribute="bottom" constant="40" id="pxt-J6-yG3"/>
+                            <constraint firstItem="oNz-i3-Pgy" firstAttribute="leading" secondItem="aao-5M-IaE" secondAttribute="leading" id="qO5-Ps-Pcy"/>
                             <constraint firstItem="tXO-Jm-fCS" firstAttribute="leading" secondItem="aao-5M-IaE" secondAttribute="leading" constant="20" id="sG7-1U-FUt"/>
                             <constraint firstAttribute="trailing" secondItem="tn3-Lf-mCj" secondAttribute="trailing" constant="20" id="wea-So-mzp"/>
                             <constraint firstItem="m1b-lb-PG3" firstAttribute="top" secondItem="LeT-PF-JAx" secondAttribute="bottom" constant="15" id="xwJ-4b-7ar"/>
@@ -251,12 +269,23 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ACCOUNT INFO" id="rhA-h7-eDe">
-                        <barButtonItem key="leftBarButtonItem" image="back" id="8IY-Uw-d06"/>
+                        <barButtonItem key="leftBarButtonItem" image="back" id="8IY-Uw-d06">
+                            <connections>
+                                <action selector="back:" destination="L1Q-xO-QR8" id="Vf5-ib-d18"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="address" destination="ty1-XC-8FT" id="P2O-H7-Uws"/>
+                        <outlet property="email" destination="m3e-sT-Xcj" id="vin-5R-ywN"/>
+                        <outlet property="name" destination="tn3-Lf-mCj" id="tyJ-cy-8PQ"/>
+                        <outlet property="phone" destination="6Dc-ao-by2" id="V0y-cV-TGO"/>
+                        <outlet property="role" destination="91q-6D-be3" id="hUb-X6-J4s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Civ-M8-SJ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1241" y="130"/>
+            <point key="canvasLocation" x="1239.375" y="129.92957746478874"/>
         </scene>
     </scenes>
     <resources>

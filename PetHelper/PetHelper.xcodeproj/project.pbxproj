@@ -31,13 +31,13 @@
 		FE61822C1F020E2A0056D95D /* FosterHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE61822B1F020E2A0056D95D /* FosterHistoryCell.swift */; };
 		FE6182311F0211E30056D95D /* MemberView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6182301F0211E30056D95D /* MemberView.storyboard */; };
 		FE6182351F0223360056D95D /* MenberActionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6182341F0223360056D95D /* MenberActionView.storyboard */; };
-		FE9F08F21F0BE39000BED90E /* FosterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F08F11F0BE39000BED90E /* FosterModel.swift */; };
-		FE9F08F61F0BEB3800BED90E /* DoctorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F08F51F0BEB3800BED90E /* DoctorModel.swift */; };
-		FE9F08F81F0BF22D00BED90E /* HistoryMember_Sales_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F08F71F0BF22D00BED90E /* HistoryMember_Sales_Controller.swift */; };
-		FE9F08FA1F0BF25800BED90E /* HistoryMember_Buy_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F08F91F0BF25800BED90E /* HistoryMember_Buy_Controller.swift */; };
-		FE9F08FC1F0BF27500BED90E /* HistoryMember_Deal_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F08FB1F0BF27500BED90E /* HistoryMember_Deal_Controller.swift */; };
-		FE9F08FE1F0BF28E00BED90E /* HistoryMember_Foster_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F08FD1F0BF28E00BED90E /* HistoryMember_Foster_Controller.swift */; };
-		FE9F09001F0BF2D900BED90E /* HistoryMember_Lost_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F08FF1F0BF2D900BED90E /* HistoryMember_Lost_Controller.swift */; };
+		FE9F09081F0C03C800BED90E /* DoctorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F09011F0C03C800BED90E /* DoctorModel.swift */; };
+		FE9F09091F0C03C800BED90E /* FosterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F09021F0C03C800BED90E /* FosterModel.swift */; };
+		FE9F090A1F0C03C800BED90E /* HistoryMember_Buy_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F09031F0C03C800BED90E /* HistoryMember_Buy_Controller.swift */; };
+		FE9F090B1F0C03C800BED90E /* HistoryMember_Deal_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F09041F0C03C800BED90E /* HistoryMember_Deal_Controller.swift */; };
+		FE9F090C1F0C03C800BED90E /* HistoryMember_Foster_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F09051F0C03C800BED90E /* HistoryMember_Foster_Controller.swift */; };
+		FE9F090D1F0C03C800BED90E /* HistoryMember_Lost_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F09061F0C03C800BED90E /* HistoryMember_Lost_Controller.swift */; };
+		FE9F090E1F0C03C800BED90E /* HistoryMember_Sales_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F09071F0C03C800BED90E /* HistoryMember_Sales_Controller.swift */; };
 		FEBA1B191EFFFE8700C66055 /* MapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEBA1B181EFFFE8700C66055 /* MapView.storyboard */; };
 		FEBA1B1B1F00012B00C66055 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBA1B1A1F00012B00C66055 /* MapViewController.swift */; };
 		FEBA1B1D1F001C2300C66055 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBA1B1C1F001C2300C66055 /* SearchResultsController.swift */; };
@@ -82,13 +82,13 @@
 		FE61822B1F020E2A0056D95D /* FosterHistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FosterHistoryCell.swift; sourceTree = "<group>"; };
 		FE6182301F0211E30056D95D /* MemberView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MemberView.storyboard; sourceTree = "<group>"; };
 		FE6182341F0223360056D95D /* MenberActionView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MenberActionView.storyboard; sourceTree = "<group>"; };
-		FE9F08F11F0BE39000BED90E /* FosterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FosterModel.swift; path = PetHelper/Controller/FosterModel.swift; sourceTree = SOURCE_ROOT; };
-		FE9F08F51F0BEB3800BED90E /* DoctorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoctorModel.swift; path = PetHelper/Controller/DoctorModel.swift; sourceTree = SOURCE_ROOT; };
-		FE9F08F71F0BF22D00BED90E /* HistoryMember_Sales_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryMember_Sales_Controller.swift; sourceTree = "<group>"; };
-		FE9F08F91F0BF25800BED90E /* HistoryMember_Buy_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryMember_Buy_Controller.swift; sourceTree = "<group>"; };
-		FE9F08FB1F0BF27500BED90E /* HistoryMember_Deal_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryMember_Deal_Controller.swift; sourceTree = "<group>"; };
-		FE9F08FD1F0BF28E00BED90E /* HistoryMember_Foster_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryMember_Foster_Controller.swift; sourceTree = "<group>"; };
-		FE9F08FF1F0BF2D900BED90E /* HistoryMember_Lost_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryMember_Lost_Controller.swift; sourceTree = "<group>"; };
+		FE9F09011F0C03C800BED90E /* DoctorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoctorModel.swift; path = PetHelper/Controller/DoctorModel.swift; sourceTree = SOURCE_ROOT; };
+		FE9F09021F0C03C800BED90E /* FosterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FosterModel.swift; path = PetHelper/Controller/FosterModel.swift; sourceTree = SOURCE_ROOT; };
+		FE9F09031F0C03C800BED90E /* HistoryMember_Buy_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryMember_Buy_Controller.swift; path = PetHelper/Controller/HistoryMember_Buy_Controller.swift; sourceTree = SOURCE_ROOT; };
+		FE9F09041F0C03C800BED90E /* HistoryMember_Deal_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryMember_Deal_Controller.swift; path = PetHelper/Controller/HistoryMember_Deal_Controller.swift; sourceTree = SOURCE_ROOT; };
+		FE9F09051F0C03C800BED90E /* HistoryMember_Foster_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryMember_Foster_Controller.swift; path = PetHelper/Controller/HistoryMember_Foster_Controller.swift; sourceTree = SOURCE_ROOT; };
+		FE9F09061F0C03C800BED90E /* HistoryMember_Lost_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryMember_Lost_Controller.swift; path = PetHelper/Controller/HistoryMember_Lost_Controller.swift; sourceTree = SOURCE_ROOT; };
+		FE9F09071F0C03C800BED90E /* HistoryMember_Sales_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryMember_Sales_Controller.swift; path = PetHelper/Controller/HistoryMember_Sales_Controller.swift; sourceTree = SOURCE_ROOT; };
 		FEBA1B181EFFFE8700C66055 /* MapView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapView.storyboard; sourceTree = "<group>"; };
 		FEBA1B1A1F00012B00C66055 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FEBA1B1C1F001C2300C66055 /* SearchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
@@ -162,20 +162,16 @@
 		FE61822F1F02117F0056D95D /* Member */ = {
 			isa = PBXGroup;
 			children = (
+				FE9F09031F0C03C800BED90E /* HistoryMember_Buy_Controller.swift */,
+				FE9F09041F0C03C800BED90E /* HistoryMember_Deal_Controller.swift */,
+				FE9F09051F0C03C800BED90E /* HistoryMember_Foster_Controller.swift */,
+				FE9F09061F0C03C800BED90E /* HistoryMember_Lost_Controller.swift */,
+				FE9F09071F0C03C800BED90E /* HistoryMember_Sales_Controller.swift */,
 				9F63F2D41F04C2AE006E8C56 /* MemberInfoController.swift */,
 				9F4862381F08DD1D00B3F956 /* SellerController.swift */,
 				9F48623A1F08DD6700B3F956 /* SaleInfoController.swift */,
-<<<<<<< HEAD
 				9F48623C1F08DD7600B3F956 /* FosterController.swift */,
 				9FAC0C261F0BF0DD00B2F6D7 /* InfoDealController.swift */,
-=======
-				9F48623C1F08DD7600B3F956 /* PetInfoController.swift */,
-				FE9F08F71F0BF22D00BED90E /* HistoryMember_Sales_Controller.swift */,
-				FE9F08F91F0BF25800BED90E /* HistoryMember_Buy_Controller.swift */,
-				FE9F08FB1F0BF27500BED90E /* HistoryMember_Deal_Controller.swift */,
-				FE9F08FD1F0BF28E00BED90E /* HistoryMember_Foster_Controller.swift */,
-				FE9F08FF1F0BF2D900BED90E /* HistoryMember_Lost_Controller.swift */,
->>>>>>> update-table
 			);
 			name = Member;
 			sourceTree = "<group>";
@@ -248,15 +244,12 @@
 		FEE7C7921EEC4DE300D75C03 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FE9F09011F0C03C800BED90E /* DoctorModel.swift */,
+				FE9F09021F0C03C800BED90E /* FosterModel.swift */,
 				9FAC90DE1F037E86008149F5 /* UserModel.swift */,
 				9F4862361F08DB8D00B3F956 /* PetTrade.swift */,
-<<<<<<< HEAD
 				9FAC0C221F0BE29D00B2F6D7 /* FosterPet.swift */,
 				9FAC0C241F0BE50C00B2F6D7 /* DoctorCheckup.swift */,
-=======
-				FE9F08F11F0BE39000BED90E /* FosterModel.swift */,
-				FE9F08F51F0BEB3800BED90E /* DoctorModel.swift */,
->>>>>>> update-table
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -424,25 +417,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE9F090E1F0C03C800BED90E /* HistoryMember_Sales_Controller.swift in Sources */,
 				9F4862391F08DD1D00B3F956 /* SellerController.swift in Sources */,
-				FE9F08F61F0BEB3800BED90E /* DoctorModel.swift in Sources */,
 				FEBA1B1D1F001C2300C66055 /* SearchResultsController.swift in Sources */,
 				FE1B0D3F1F016FEC00BCB506 /* DoctorViewController.swift in Sources */,
 				FE1B0D411F01722000BCB506 /* DoctorCreateDealController.swift in Sources */,
 				FE6182261F020BF50056D95D /* FosterHistoryInfoController.swift in Sources */,
 				FE1B0D431F0198B500BCB506 /* DoctorHistoryController.swift in Sources */,
+				FE9F090B1F0C03C800BED90E /* HistoryMember_Deal_Controller.swift in Sources */,
 				FE61822C1F020E2A0056D95D /* FosterHistoryCell.swift in Sources */,
-<<<<<<< HEAD
 				9F48623D1F08DD7600B3F956 /* FosterController.swift in Sources */,
-=======
-				9F48623D1F08DD7600B3F956 /* PetInfoController.swift in Sources */,
-				FE9F08FE1F0BF28E00BED90E /* HistoryMember_Foster_Controller.swift in Sources */,
-				FE9F08F81F0BF22D00BED90E /* HistoryMember_Sales_Controller.swift in Sources */,
-				FE9F08F21F0BE39000BED90E /* FosterModel.swift in Sources */,
->>>>>>> update-table
 				FEE7C7811EEC4D9F00D75C03 /* ViewController.swift in Sources */,
 				FE6182221F020B480056D95D /* FosterCreateEventController.swift in Sources */,
 				FEBA1B1B1F00012B00C66055 /* MapViewController.swift in Sources */,
+				FE9F090D1F0C03C800BED90E /* HistoryMember_Lost_Controller.swift in Sources */,
 				9FAC0C271F0BF0DD00B2F6D7 /* InfoDealController.swift in Sources */,
 				FE6182281F020CBF0056D95D /* DoctorHistoryInfoController.swift in Sources */,
 				FE6182241F020B760056D95D /* FosterHistoryController.swift in Sources */,
@@ -452,15 +440,16 @@
 				FE6182201F020B030056D95D /* FosterViewController.swift in Sources */,
 				9F63F2D51F04C2AE006E8C56 /* MemberInfoController.swift in Sources */,
 				FEE055341F093D940062816B /* AdminManagerController.swift in Sources */,
-				FE9F08FA1F0BF25800BED90E /* HistoryMember_Buy_Controller.swift in Sources */,
 				FEE055361F097B600062816B /* UpdateRoleController.swift in Sources */,
 				9FAC0C251F0BE50C00B2F6D7 /* DoctorCheckup.swift in Sources */,
+				FE9F090C1F0C03C800BED90E /* HistoryMember_Foster_Controller.swift in Sources */,
 				9F48623B1F08DD6700B3F956 /* SaleInfoController.swift in Sources */,
-				FE9F08FC1F0BF27500BED90E /* HistoryMember_Deal_Controller.swift in Sources */,
-				FE9F09001F0BF2D900BED90E /* HistoryMember_Lost_Controller.swift in Sources */,
 				FEE055321F093D5F0062816B /* AdminViewController.swift in Sources */,
+				FE9F090A1F0C03C800BED90E /* HistoryMember_Buy_Controller.swift in Sources */,
+				FE9F09091F0C03C800BED90E /* FosterModel.swift in Sources */,
 				9FAC90DF1F037E86008149F5 /* UserModel.swift in Sources */,
 				FE61821E1F02053B0056D95D /* DoctorHistoryCell.swift in Sources */,
+				FE9F09081F0C03C800BED90E /* DoctorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

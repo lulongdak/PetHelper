@@ -11,8 +11,11 @@
 		9F4862371F08DB8D00B3F956 /* PetTrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4862361F08DB8D00B3F956 /* PetTrade.swift */; };
 		9F4862391F08DD1D00B3F956 /* SellerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4862381F08DD1D00B3F956 /* SellerController.swift */; };
 		9F48623B1F08DD6700B3F956 /* SaleInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F48623A1F08DD6700B3F956 /* SaleInfoController.swift */; };
-		9F48623D1F08DD7600B3F956 /* PetInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F48623C1F08DD7600B3F956 /* PetInfoController.swift */; };
+		9F48623D1F08DD7600B3F956 /* FosterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F48623C1F08DD7600B3F956 /* FosterController.swift */; };
 		9F63F2D51F04C2AE006E8C56 /* MemberInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F63F2D41F04C2AE006E8C56 /* MemberInfoController.swift */; };
+		9FAC0C231F0BE29D00B2F6D7 /* FosterPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAC0C221F0BE29D00B2F6D7 /* FosterPet.swift */; };
+		9FAC0C251F0BE50C00B2F6D7 /* DoctorCheckup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAC0C241F0BE50C00B2F6D7 /* DoctorCheckup.swift */; };
+		9FAC0C271F0BF0DD00B2F6D7 /* InfoDealController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAC0C261F0BF0DD00B2F6D7 /* InfoDealController.swift */; };
 		9FAC90DF1F037E86008149F5 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAC90DE1F037E86008149F5 /* UserModel.swift */; };
 		FE1B0D3D1F016D4E00BCB506 /* DoctorView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE1B0D3C1F016D4E00BCB506 /* DoctorView.storyboard */; };
 		FE1B0D3F1F016FEC00BCB506 /* DoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1B0D3E1F016FEC00BCB506 /* DoctorViewController.swift */; };
@@ -49,8 +52,11 @@
 		9F4862361F08DB8D00B3F956 /* PetTrade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PetTrade.swift; path = PetHelper/Controller/PetTrade.swift; sourceTree = SOURCE_ROOT; };
 		9F4862381F08DD1D00B3F956 /* SellerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerController.swift; sourceTree = "<group>"; };
 		9F48623A1F08DD6700B3F956 /* SaleInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaleInfoController.swift; sourceTree = "<group>"; };
-		9F48623C1F08DD7600B3F956 /* PetInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetInfoController.swift; sourceTree = "<group>"; };
+		9F48623C1F08DD7600B3F956 /* FosterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FosterController.swift; sourceTree = "<group>"; };
 		9F63F2D41F04C2AE006E8C56 /* MemberInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberInfoController.swift; sourceTree = "<group>"; };
+		9FAC0C221F0BE29D00B2F6D7 /* FosterPet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FosterPet.swift; path = PetHelper/Controller/FosterPet.swift; sourceTree = SOURCE_ROOT; };
+		9FAC0C241F0BE50C00B2F6D7 /* DoctorCheckup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoctorCheckup.swift; path = PetHelper/Controller/DoctorCheckup.swift; sourceTree = SOURCE_ROOT; };
+		9FAC0C261F0BF0DD00B2F6D7 /* InfoDealController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoDealController.swift; sourceTree = "<group>"; };
 		9FAC90DB1F035BED008149F5 /* PetHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PetHelper.entitlements; sourceTree = "<group>"; };
 		9FAC90DE1F037E86008149F5 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserModel.swift; path = PetHelper/Resources/UserModel.swift; sourceTree = SOURCE_ROOT; };
 		A0502D16141E9B53A755CFC9 /* Pods-PetHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetHelper/Pods-PetHelper.release.xcconfig"; sourceTree = "<group>"; };
@@ -145,7 +151,8 @@
 				9F63F2D41F04C2AE006E8C56 /* MemberInfoController.swift */,
 				9F4862381F08DD1D00B3F956 /* SellerController.swift */,
 				9F48623A1F08DD6700B3F956 /* SaleInfoController.swift */,
-				9F48623C1F08DD7600B3F956 /* PetInfoController.swift */,
+				9F48623C1F08DD7600B3F956 /* FosterController.swift */,
+				9FAC0C261F0BF0DD00B2F6D7 /* InfoDealController.swift */,
 			);
 			name = Member;
 			sourceTree = "<group>";
@@ -220,6 +227,8 @@
 			children = (
 				9FAC90DE1F037E86008149F5 /* UserModel.swift */,
 				9F4862361F08DB8D00B3F956 /* PetTrade.swift */,
+				9FAC0C221F0BE29D00B2F6D7 /* FosterPet.swift */,
+				9FAC0C241F0BE50C00B2F6D7 /* DoctorCheckup.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -394,18 +403,21 @@
 				FE6182261F020BF50056D95D /* FosterHistoryInfoController.swift in Sources */,
 				FE1B0D431F0198B500BCB506 /* DoctorHistoryController.swift in Sources */,
 				FE61822C1F020E2A0056D95D /* FosterHistoryCell.swift in Sources */,
-				9F48623D1F08DD7600B3F956 /* PetInfoController.swift in Sources */,
+				9F48623D1F08DD7600B3F956 /* FosterController.swift in Sources */,
 				FEE7C7811EEC4D9F00D75C03 /* ViewController.swift in Sources */,
 				FE6182221F020B480056D95D /* FosterCreateEventController.swift in Sources */,
 				FEBA1B1B1F00012B00C66055 /* MapViewController.swift in Sources */,
+				9FAC0C271F0BF0DD00B2F6D7 /* InfoDealController.swift in Sources */,
 				FE6182281F020CBF0056D95D /* DoctorHistoryInfoController.swift in Sources */,
 				FE6182241F020B760056D95D /* FosterHistoryController.swift in Sources */,
 				9F4862371F08DB8D00B3F956 /* PetTrade.swift in Sources */,
+				9FAC0C231F0BE29D00B2F6D7 /* FosterPet.swift in Sources */,
 				FEE7C77F1EEC4D9F00D75C03 /* AppDelegate.swift in Sources */,
 				FE6182201F020B030056D95D /* FosterViewController.swift in Sources */,
 				9F63F2D51F04C2AE006E8C56 /* MemberInfoController.swift in Sources */,
 				FEE055341F093D940062816B /* AdminManagerController.swift in Sources */,
 				FEE055361F097B600062816B /* UpdateRoleController.swift in Sources */,
+				9FAC0C251F0BE50C00B2F6D7 /* DoctorCheckup.swift in Sources */,
 				9F48623B1F08DD6700B3F956 /* SaleInfoController.swift in Sources */,
 				FEE055321F093D5F0062816B /* AdminViewController.swift in Sources */,
 				9FAC90DF1F037E86008149F5 /* UserModel.swift in Sources */,

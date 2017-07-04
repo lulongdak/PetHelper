@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -118,7 +118,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YA5-47-HGM" id="fa3-bp-5fy">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -367,7 +367,7 @@
         <!--INFO DEAL-->
         <scene sceneID="rEq-2R-LSf">
             <objects>
-                <viewController id="Y9M-SY-Ewc" sceneMemberID="viewController">
+                <viewController id="Y9M-SY-Ewc" customClass="InfoDealController" customModule="PetHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Pe0-1Q-HBw"/>
                         <viewControllerLayoutGuide type="bottom" id="OqZ-3Q-eRr"/>
@@ -422,11 +422,19 @@
                                 <rect key="frame" x="125" y="305" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="GET DEAL"/>
+                                <connections>
+                                    <action selector="btnGetDeal:" destination="Y9M-SY-Ewc" eventType="touchUpInside" id="trs-ze-obA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="INFO DEAL" id="RGW-dK-rHg"/>
+                    <connections>
+                        <outlet property="txfAddress" destination="J8q-K4-ly7" id="5rj-HI-az5"/>
+                        <outlet property="txfCost" destination="LOP-yI-ckI" id="A9E-fY-TNr"/>
+                        <outlet property="txfDoctor" destination="YW8-v1-zMm" id="Sc2-aD-KLc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gnm-Tn-6ZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -435,7 +443,7 @@
         <!--FOSTER-->
         <scene sceneID="s8H-LQ-xgF">
             <objects>
-                <viewController id="4I3-n7-KKN" sceneMemberID="viewController">
+                <viewController id="4I3-n7-KKN" customClass="FosterController" customModule="PetHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="39L-BI-wFB"/>
                         <viewControllerLayoutGuide type="bottom" id="aqr-tl-nQx"/>
@@ -527,6 +535,9 @@
                                     <constraint firstAttribute="height" constant="30" id="lSR-eb-jaq"/>
                                 </constraints>
                                 <state key="normal" title="GET"/>
+                                <connections>
+                                    <action selector="btnGet:" destination="4I3-n7-KKN" eventType="touchUpInside" id="3GV-Pk-Nua"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity of yours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4J-PR-QtH">
                                 <rect key="frame" x="10" y="268" width="132" height="21"/>
@@ -570,6 +581,12 @@
                     <navigationItem key="navigationItem" title="FOSTER" id="Bwh-2l-USs">
                         <barButtonItem key="leftBarButtonItem" image="back" id="zrl-tL-yLs"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="txfAddress" destination="UIF-3n-Cpd" id="R7j-YT-Ru1"/>
+                        <outlet property="txfBuyQty" destination="8Ej-yG-6dp" id="idA-9N-Tjv"/>
+                        <outlet property="txfFoster" destination="8N1-Ac-K7j" id="YKN-4X-LFT"/>
+                        <outlet property="txfQty" destination="AV0-Do-7eJ" id="TRH-D7-kVp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lZ0-lG-whG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -578,7 +595,7 @@
         <!--INFORMATION-->
         <scene sceneID="j7z-Gh-8eq">
             <objects>
-                <viewController id="SWd-jm-7u4" sceneMemberID="viewController">
+                <viewController id="SWd-jm-7u4" customClass="SaleInfoController" customModule="PetHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vx1-wD-tbG"/>
                         <viewControllerLayoutGuide type="bottom" id="m2x-wm-VEJ"/>
@@ -770,6 +787,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="INFORMATION" id="Zmm-e6-bSL"/>
+                    <connections>
+                        <outlet property="imgPet" destination="A9n-Il-mYk" id="z28-jU-2oM"/>
+                        <outlet property="txfAdopter" destination="VbM-NB-IIc" id="CsS-M6-i9v"/>
+                        <outlet property="txfAge" destination="jRR-0O-N1c" id="srd-4n-jGA"/>
+                        <outlet property="txfAmount" destination="hOJ-Q2-8sn" id="emL-Pv-JPB"/>
+                        <outlet property="txfExpDate" destination="GYo-W9-0xx" id="cre-3T-5Ey"/>
+                        <outlet property="txfPrice" destination="QEd-df-0s1" id="qVu-d3-jqJ"/>
+                        <outlet property="txfRace" destination="raQ-Mv-FtI" id="xg9-rl-hcX"/>
+                        <outlet property="txfSpecies" destination="CZQ-oq-Z4w" id="uB6-B1-rjk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="scU-Bm-taf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -795,7 +822,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Wp-Tn-3A5" id="UWc-kP-qIP">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -841,7 +868,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YFb-An-ilS" id="rVf-hb-GHe">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -887,7 +914,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D2S-88-9AI" id="lhk-Ne-VPs">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -933,7 +960,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Ir-3i-eHv" id="ep5-0z-MWe">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>

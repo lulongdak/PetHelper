@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
+import FirebaseStorage
+import Darwin
 
 extension String  {
     var isNumber : Bool {
@@ -22,6 +26,8 @@ class DoctorCreateDealController: UIViewController {
     @IBOutlet weak var qty: UITextField!
     @IBOutlet weak var enddate: UITextField!
     @IBOutlet weak var startdate: UITextField!
+    
+    let rootRef = Database.database().reference()
     
     @IBAction func back(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
@@ -42,6 +48,21 @@ class DoctorCreateDealController: UIViewController {
             self.navigationController?.popViewController(animated: true)
         }
         
+        
+        let key = rootRef.child("surgery_pet").childByAutoId().key
+        
+            //update information
+            let post = ["patientQuantity": txtqty,
+                        "doctorUserID": Auth.auth().currentUser!.uid,
+                        "endDate": txtenddate,
+                        "startDate": txtstartdate,
+                        "cost": txtdeal,
+                        "patientSpecies": txtanimal,
+                        "patientList": ""]
+            let childupdate = ["/\(key)": post]
+            self.rootRef.child("surgery_pet").updateChildValues(childupdate)
+    
+
     }
     /*** Input start date */
     let m_startdate = UIDatePicker()

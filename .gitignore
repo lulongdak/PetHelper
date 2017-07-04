@@ -2,8 +2,7 @@
 build/*
 *.pbxuser
 *.mode1v3
-*.xcodeproj/*
-!*.xcodeproj/project.pbxproj
+project.pbxproj
 build/*
 # old skool
 .svn

@@ -1,20 +1,14 @@
 //
-//  AdminViewController.swift
+//  HistoryMember_Buy_Controller.swift
 //  PetHelper
 //
-//  Created by Lu Tam Long on 7/2/17.
+//  Created by Lu Tam Long on 7/4/17.
 //  Copyright © 2017 SUAY555. All rights reserved.
 //
 
 import UIKit
 
-class AdminViewController: UIViewController {
-    @IBAction func tomaps(_ sender: Any) {
-        let storyboar = UIStoryboard(name: "MapView", bundle: Bundle.main)
-        let controller = storyboar.instantiateViewController(withIdentifier: "MapView")
-        self.present(controller, animated: true, completion: nil)
-
-    }
+class HistoryMember_Buy_Controller: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import Firebase
 
 class DoctorHistoryController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+   
+    @IBOutlet weak var mytable: UITableView!
+    var table_data = [cell_history_deal]()
+    let rootRef = Database.database().reference()
     @IBAction func back(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
@@ -17,13 +21,39 @@ class DoctorHistoryController: UIViewController, UITableViewDataSource, UITableV
         
         super.viewDidLoad()
         navigationController?.navigationBar.barTintColor = UIColor(red: 62/255, green: 167/255, blue: 53/255, alpha: 1)
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        self.mytable.delegate = self
+        self.mytable.dataSource = self
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        var arr_key:[String]=[]
+        let condition = rootRef.child("doctor")
+        condition.observe( DataEventType.value, with: { (snapshot: DataSnapshot) in
+            self.table_data.removeAll()
+            let deal = snapshot.value as? [String:[String: AnyObject]]
+            if (deal != nil)
+            {
+                arr_key = [String](deal!.keys)
+                arr_key.forEach { key in
+                    let user_id = deal![key]!["user_id"] as! String
+                    if (user_id == Auth.auth().currentUser!.uid)
+                    {
+                        
+                        var foster_history = cell_history_foster()
+                        let startdate = deal![key]!["startdate"] as! String
+                        let enddate  = deal![key]!["enddate"] as! String
+                        foster_history.id! = key
+                        foster_history.time! = startdate + " - " + enddate
+                        
+                    }
+                }
+                
+                
+            }
+            
+            
+        })
+
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -37,13 +67,14 @@ class DoctorHistoryController: UIViewController, UITableViewDataSource, UITableV
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //return mangMH.count
-        return 10
+        return table_data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell=tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         //cell.textLabel?.text=mangMH[indexPath.row]
         //cell.textLabel?.text=List_Students[indexPath.row].ID
+        cell.textLabel?.text = table_data[indexPath.row].time
         return cell
     }
     

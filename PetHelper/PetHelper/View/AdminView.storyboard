@@ -45,6 +45,14 @@
                                     <segue destination="sUc-ee-BDU" kind="show" id="Xaw-XG-Dll"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yx6-pU-c0K">
+                                <rect key="frame" x="131" y="200" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="To maps"/>
+                                <connections>
+                                    <action selector="tomaps:" destination="aAf-XM-bR9" eventType="touchUpInside" id="cfO-jO-Skz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

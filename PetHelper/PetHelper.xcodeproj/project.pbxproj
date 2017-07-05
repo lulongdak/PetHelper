@@ -35,7 +35,6 @@
 		FE9F09081F0C03C800BED90E /* DoctorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F09011F0C03C800BED90E /* DoctorModel.swift */; };
 		FE9F09091F0C03C800BED90E /* FosterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F09021F0C03C800BED90E /* FosterModel.swift */; };
 		FE9F090A1F0C03C800BED90E /* HistoryMember_Buy_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F09031F0C03C800BED90E /* HistoryMember_Buy_Controller.swift */; };
-		FE9F090B1F0C03C800BED90E /* HistoryMember_Deal_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F09041F0C03C800BED90E /* HistoryMember_Deal_Controller.swift */; };
 		FE9F090C1F0C03C800BED90E /* HistoryMember_Foster_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F09051F0C03C800BED90E /* HistoryMember_Foster_Controller.swift */; };
 		FE9F090D1F0C03C800BED90E /* HistoryMember_Lost_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F09061F0C03C800BED90E /* HistoryMember_Lost_Controller.swift */; };
 		FE9F090E1F0C03C800BED90E /* HistoryMember_Sales_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F09071F0C03C800BED90E /* HistoryMember_Sales_Controller.swift */; };
@@ -44,6 +43,7 @@
 		FEBA1B1D1F001C2300C66055 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBA1B1C1F001C2300C66055 /* SearchResultsController.swift */; };
 		FEDA3CE21F0D325B00CCD9FC /* GetDealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDA3CE11F0D325B00CCD9FC /* GetDealViewController.swift */; };
 		FEDA3CE41F0D3ECA00CCD9FC /* ActionMemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDA3CE31F0D3ECA00CCD9FC /* ActionMemController.swift */; };
+		FEDA3CE61F0D509900CCD9FC /* HistoryMember_Deal_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDA3CE51F0D509900CCD9FC /* HistoryMember_Deal_Controller.swift */; };
 		FEE0552F1F0905BE0062816B /* AdminView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE0552E1F0905BE0062816B /* AdminView.storyboard */; };
 		FEE055321F093D5F0062816B /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE055311F093D5F0062816B /* AdminViewController.swift */; };
 		FEE055341F093D940062816B /* AdminManagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE055331F093D940062816B /* AdminManagerController.swift */; };
@@ -89,7 +89,6 @@
 		FE9F09011F0C03C800BED90E /* DoctorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoctorModel.swift; path = PetHelper/Controller/DoctorModel.swift; sourceTree = SOURCE_ROOT; };
 		FE9F09021F0C03C800BED90E /* FosterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FosterModel.swift; path = PetHelper/Controller/FosterModel.swift; sourceTree = SOURCE_ROOT; };
 		FE9F09031F0C03C800BED90E /* HistoryMember_Buy_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryMember_Buy_Controller.swift; path = PetHelper/Controller/HistoryMember_Buy_Controller.swift; sourceTree = SOURCE_ROOT; };
-		FE9F09041F0C03C800BED90E /* HistoryMember_Deal_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryMember_Deal_Controller.swift; path = PetHelper/Controller/HistoryMember_Deal_Controller.swift; sourceTree = SOURCE_ROOT; };
 		FE9F09051F0C03C800BED90E /* HistoryMember_Foster_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryMember_Foster_Controller.swift; path = PetHelper/Controller/HistoryMember_Foster_Controller.swift; sourceTree = SOURCE_ROOT; };
 		FE9F09061F0C03C800BED90E /* HistoryMember_Lost_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryMember_Lost_Controller.swift; path = PetHelper/Controller/HistoryMember_Lost_Controller.swift; sourceTree = SOURCE_ROOT; };
 		FE9F09071F0C03C800BED90E /* HistoryMember_Sales_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryMember_Sales_Controller.swift; path = PetHelper/Controller/HistoryMember_Sales_Controller.swift; sourceTree = SOURCE_ROOT; };
@@ -98,6 +97,7 @@
 		FEBA1B1C1F001C2300C66055 /* SearchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
 		FEDA3CE11F0D325B00CCD9FC /* GetDealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetDealViewController.swift; sourceTree = "<group>"; };
 		FEDA3CE31F0D3ECA00CCD9FC /* ActionMemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionMemController.swift; sourceTree = "<group>"; };
+		FEDA3CE51F0D509900CCD9FC /* HistoryMember_Deal_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryMember_Deal_Controller.swift; sourceTree = "<group>"; };
 		FEE0552E1F0905BE0062816B /* AdminView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AdminView.storyboard; sourceTree = "<group>"; };
 		FEE055311F093D5F0062816B /* AdminViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
 		FEE055331F093D940062816B /* AdminManagerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminManagerController.swift; sourceTree = "<group>"; };
@@ -168,8 +168,8 @@
 		FE61822F1F02117F0056D95D /* Member */ = {
 			isa = PBXGroup;
 			children = (
+				FEDA3CE51F0D509900CCD9FC /* HistoryMember_Deal_Controller.swift */,
 				FE9F09031F0C03C800BED90E /* HistoryMember_Buy_Controller.swift */,
-				FE9F09041F0C03C800BED90E /* HistoryMember_Deal_Controller.swift */,
 				FE9F09051F0C03C800BED90E /* HistoryMember_Foster_Controller.swift */,
 				FE9F09061F0C03C800BED90E /* HistoryMember_Lost_Controller.swift */,
 				FE9F09071F0C03C800BED90E /* HistoryMember_Sales_Controller.swift */,
@@ -426,6 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEDA3CE61F0D509900CCD9FC /* HistoryMember_Deal_Controller.swift in Sources */,
 				FE9F090E1F0C03C800BED90E /* HistoryMember_Sales_Controller.swift in Sources */,
 				9F4862391F08DD1D00B3F956 /* SellerController.swift in Sources */,
 				FEBA1B1D1F001C2300C66055 /* SearchResultsController.swift in Sources */,
@@ -433,7 +434,6 @@
 				FE1B0D411F01722000BCB506 /* DoctorCreateDealController.swift in Sources */,
 				FE6182261F020BF50056D95D /* FosterHistoryInfoController.swift in Sources */,
 				FE1B0D431F0198B500BCB506 /* DoctorHistoryController.swift in Sources */,
-				FE9F090B1F0C03C800BED90E /* HistoryMember_Deal_Controller.swift in Sources */,
 				9FFD5FD01F0D1A0400CDDB01 /* MainMemberViewController.swift in Sources */,
 				FE61822C1F020E2A0056D95D /* FosterHistoryCell.swift in Sources */,
 				9F48623D1F08DD7600B3F956 /* FosterController.swift in Sources */,

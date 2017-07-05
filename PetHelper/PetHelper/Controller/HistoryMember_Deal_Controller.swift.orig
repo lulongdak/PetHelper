@@ -8,18 +8,38 @@
 
 import UIKit
 import Firebase
+<<<<<<< HEAD
+=======
+import FirebaseDatabase
+import FirebaseStorage
+import Darwin
+>>>>>>> 6322e13088a68530a554e52c1af539e2ff09defd
 
 class HistoryMember_Deal_Controller: UIViewController, UITableViewDataSource,UITableViewDelegate {
 
+<<<<<<< HEAD
     @IBOutlet weak var mytable: UITableView!
     var table_data = [cell_history_foster]()
     let rootRef = Database.database().reference()
     @IBAction func back(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+=======
+    @IBOutlet weak var txfDoctor: UITextField!
+    
+    @IBOutlet weak var txfCost: UITextField!
+    
+    @IBOutlet weak var txfAddress: UITextField!
+    
+    var sessionID: String?
+    let rootRef = Database.database().reference()
+
+    
+>>>>>>> 6322e13088a68530a554e52c1af539e2ff09defd
     override func viewDidLoad() {
         
         super.viewDidLoad()
+<<<<<<< HEAD
         navigationController?.navigationBar.barTintColor = UIColor(red: 62/255, green: 167/255, blue: 53/255, alpha: 1)
         self.mytable.delegate = self
         self.mytable.dataSource = self
@@ -56,6 +76,43 @@ class HistoryMember_Deal_Controller: UIViewController, UITableViewDataSource,UIT
             
         })
         
+=======
+
+        navigationController?.navigationBar.barTintColor = UIColor(red: 62/255, green: 167/255, blue: 53/255, alpha: 1)
+        
+        
+        //insert session ID here
+        //sessionID =
+        
+        //show existing info
+        let condition = rootRef.child("surgery_id").child(sessionID!)
+        
+        condition.observe( DataEventType.value, with: { (snapshot: DataSnapshot) in
+            
+            if let user = snapshot.value as? [String: AnyObject]{
+                let info = DoctorCheckup()
+                info.setValuesForKeys(user)
+                let doctorID = info.doctorUserID
+                self.txfCost.text = info.cost
+                
+                //get doctor info
+                let doctorCondition = self.rootRef.child("user_info").child(doctorID!)
+                doctorCondition.observe( DataEventType.value, with: { (snapshot: DataSnapshot) in
+                    
+                    if let doctor = snapshot.value as? [String: AnyObject]{
+                        let doctorInfo = UserModel()
+                        doctorInfo.setValuesForKeys(doctor)
+                        self.txfDoctor.text = doctorInfo.userName
+                        self.txfAddress.text = doctorInfo.address
+                    }
+                })
+                
+            }
+        })
+
+        
+        // Do any additional setup after loading the view.
+>>>>>>> 6322e13088a68530a554e52c1af539e2ff09defd
     }
 
    
@@ -65,6 +122,7 @@ class HistoryMember_Deal_Controller: UIViewController, UITableViewDataSource,UIT
         // Dispose of any resources that can be recreated.
     }
     
+<<<<<<< HEAD
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -95,6 +153,11 @@ class HistoryMember_Deal_Controller: UIViewController, UITableViewDataSource,UIT
         
     }
 
+=======
+    @IBAction func back(_ sender: Any) {
+         self.navigationController?.popViewController(animated: true)
+    }
+>>>>>>> 6322e13088a68530a554e52c1af539e2ff09defd
 
     /*
     // MARK: - Navigation

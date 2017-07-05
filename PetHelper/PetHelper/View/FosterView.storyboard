@@ -56,7 +56,7 @@
                                 </constraints>
                                 <state key="normal" title="History"/>
                                 <connections>
-                                    <segue destination="YzV-YO-HHC" kind="show" id="d4T-a2-fjO"/>
+                                    <segue destination="YzV-YO-HHC" kind="show" identifier="History" id="d4T-a2-fjO"/>
                                 </connections>
                             </button>
                         </subviews>

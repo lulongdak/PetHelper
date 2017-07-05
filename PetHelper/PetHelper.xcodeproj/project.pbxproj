@@ -41,6 +41,7 @@
 		FEBA1B191EFFFE8700C66055 /* MapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEBA1B181EFFFE8700C66055 /* MapView.storyboard */; };
 		FEBA1B1B1F00012B00C66055 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBA1B1A1F00012B00C66055 /* MapViewController.swift */; };
 		FEBA1B1D1F001C2300C66055 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBA1B1C1F001C2300C66055 /* SearchResultsController.swift */; };
+		FEDA3CE01F0D1DC900CCD9FC /* MemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDA3CDF1F0D1DC900CCD9FC /* MemberViewController.swift */; };
 		FEE0552F1F0905BE0062816B /* AdminView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE0552E1F0905BE0062816B /* AdminView.storyboard */; };
 		FEE055321F093D5F0062816B /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE055311F093D5F0062816B /* AdminViewController.swift */; };
 		FEE055341F093D940062816B /* AdminManagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE055331F093D940062816B /* AdminManagerController.swift */; };
@@ -92,6 +93,7 @@
 		FEBA1B181EFFFE8700C66055 /* MapView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapView.storyboard; sourceTree = "<group>"; };
 		FEBA1B1A1F00012B00C66055 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FEBA1B1C1F001C2300C66055 /* SearchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
+		FEDA3CDF1F0D1DC900CCD9FC /* MemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberViewController.swift; sourceTree = "<group>"; };
 		FEE0552E1F0905BE0062816B /* AdminView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AdminView.storyboard; sourceTree = "<group>"; };
 		FEE055311F093D5F0062816B /* AdminViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
 		FEE055331F093D940062816B /* AdminManagerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminManagerController.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				9F48623A1F08DD6700B3F956 /* SaleInfoController.swift */,
 				9F48623C1F08DD7600B3F956 /* FosterController.swift */,
 				9FAC0C261F0BF0DD00B2F6D7 /* InfoDealController.swift */,
+				FEDA3CDF1F0D1DC900CCD9FC /* MemberViewController.swift */,
 			);
 			name = Member;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				FE6182261F020BF50056D95D /* FosterHistoryInfoController.swift in Sources */,
 				FE1B0D431F0198B500BCB506 /* DoctorHistoryController.swift in Sources */,
 				FE9F090B1F0C03C800BED90E /* HistoryMember_Deal_Controller.swift in Sources */,
+				FEDA3CE01F0D1DC900CCD9FC /* MemberViewController.swift in Sources */,
 				FE61822C1F020E2A0056D95D /* FosterHistoryCell.swift in Sources */,
 				9F48623D1F08DD7600B3F956 /* FosterController.swift in Sources */,
 				FEE7C7811EEC4D9F00D75C03 /* ViewController.swift in Sources */,

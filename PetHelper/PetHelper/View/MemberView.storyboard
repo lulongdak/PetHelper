@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,7 +28,7 @@
         <!--MENU-->
         <scene sceneID="vPR-NM-LgN">
             <objects>
-                <viewController storyboardIdentifier="MemberMainMenu" id="5v0-fc-0pI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemberMainMenu" id="5v0-fc-0pI" customClass="MemberViewController" customModule="PetHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OdG-eE-elG"/>
                         <viewControllerLayoutGuide type="bottom" id="eKb-Gv-vqw"/>
@@ -49,9 +49,18 @@
                                     <segue destination="9k2-K8-nS4" kind="show" id="Ui0-yK-WG8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkH-rP-o2g">
+                                <rect key="frame" x="120" y="216" width="80" height="30"/>
+                                <state key="normal" title="User Action"/>
+                                <connections>
+                                    <action selector="ToAction:" destination="5v0-fc-0pI" eventType="touchUpInside" id="IDf-ie-fm9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="UkH-rP-o2g" firstAttribute="top" secondItem="IYt-sd-aWg" secondAttribute="bottom" constant="30" id="4DF-GI-HZl"/>
+                            <constraint firstItem="UkH-rP-o2g" firstAttribute="centerX" secondItem="kQA-dr-xkQ" secondAttribute="centerX" id="8sG-bk-Gth"/>
                             <constraint firstItem="IYt-sd-aWg" firstAttribute="centerX" secondItem="kQA-dr-xkQ" secondAttribute="centerX" id="BYN-3w-c40"/>
                             <constraint firstItem="IYt-sd-aWg" firstAttribute="top" secondItem="OdG-eE-elG" secondAttribute="bottom" constant="92" id="I9z-zt-xNT"/>
                         </constraints>

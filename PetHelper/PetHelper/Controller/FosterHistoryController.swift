@@ -22,37 +22,35 @@ class FosterHistoryController: UIViewController,UITableViewDelegate,UITableViewD
         self.mytable.delegate = self
         
         var arr_key:[String]=[]
-        let condition = rootRef.child("foster")
+        let condition = rootRef.child("foster_pet")
         condition.observe( DataEventType.value, with: { (snapshot: DataSnapshot) in
             self.table_data.removeAll()
             let foster = snapshot.value as? [String:[String: AnyObject]]
             if (foster != nil)
             {
+                print(foster)
                 arr_key = [String](foster!.keys)
                 arr_key.forEach { key in
-                    let user_id = foster![key]!["user_id"] as! String
+                    let user_id = foster![key]!["fosterUserID"] as! String
+                    print(user_id)
+                    print(Auth.auth().currentUser!.uid)
                     if (user_id == Auth.auth().currentUser!.uid)
                     {
                         
                         var foster_history = cell_history_foster()
-                        let startdate = foster![key]!["startdate"] as! String
-                        let enddate  = foster![key]!["enddate"] as! String
-                        foster_history.id! = key
-                        foster_history.time! = startdate + " - " + enddate
-                        //arr_list.insert(tmp_tbl_acc, at: 0)
-                        //self.table_data.insert(tmp_tbl_acc, at: 0)
-                       // self.mytable.reloadData()
-                        //arr_list.append(tmp_tbl_acc)
-                        //print(tmp_tbl_acc)
+                        let startdate = foster![key]!["startDate"] as! String
+                        let enddate  = foster![key]!["endDate"] as! String
+                        foster_history.id = key
+                        foster_history.time = startdate + " to " + enddate
+                        self.table_data.insert(foster_history, at: 0)
+                        self.mytable.reloadData()
+
                         
                     }
                 }
                 
                 
             }
-            //arr_key.append("accc")
-            //print(arr_list)
-            // return arr_list
             
         })
 
@@ -69,7 +67,7 @@ class FosterHistoryController: UIViewController,UITableViewDelegate,UITableViewD
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = table_data[indexPath.row].time
         return cell
     }
@@ -78,10 +76,10 @@ class FosterHistoryController: UIViewController,UITableViewDelegate,UITableViewD
         //curStudent=List_Students[indexPath.row]
         //let index=indexPath.row
         index = indexPath.row
-        if (index > -1){
+        /*if (index > -1){
             //main_navigation.rightBarButtonItem?.isEnabled=true
-            performSegue(withIdentifier: "AccountInfo", sender: nil)
-        }
+            performSegue(withIdentifier: "", sender: nil)
+        }*/
         
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

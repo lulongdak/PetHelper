@@ -12,7 +12,7 @@ import Firebase
 class DoctorHistoryController: UIViewController, UITableViewDataSource, UITableViewDelegate {
    
     @IBOutlet weak var mytable: UITableView!
-    var table_data = [cell_history_deal]()
+    var table_data = [cell_history_foster]()
     let rootRef = Database.database().reference()
     @IBAction func back(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
@@ -25,7 +25,7 @@ class DoctorHistoryController: UIViewController, UITableViewDataSource, UITableV
         self.mytable.dataSource = self
 
         var arr_key:[String]=[]
-        let condition = rootRef.child("doctor")
+        let condition = rootRef.child("surgery_pet")
         condition.observe( DataEventType.value, with: { (snapshot: DataSnapshot) in
             self.table_data.removeAll()
             let deal = snapshot.value as? [String:[String: AnyObject]]
@@ -33,16 +33,18 @@ class DoctorHistoryController: UIViewController, UITableViewDataSource, UITableV
             {
                 arr_key = [String](deal!.keys)
                 arr_key.forEach { key in
-                    let user_id = deal![key]!["user_id"] as! String
+                    let user_id = deal![key]!["doctorUserID"] as! String
                     if (user_id == Auth.auth().currentUser!.uid)
                     {
                         
-                        var foster_history = cell_history_foster()
-                        let startdate = deal![key]!["startdate"] as! String
-                        let enddate  = deal![key]!["enddate"] as! String
-                        foster_history.id! = key
-                        foster_history.time! = startdate + " - " + enddate
-                        
+                        var deal_history = cell_history_foster()
+                        let startdate = deal![key]!["startDate"] as! String
+                        let enddate  = deal![key]!["endDate"] as! String
+                        deal_history.id = key
+                        deal_history.time = startdate + " to " + enddate
+                        self.table_data.insert(deal_history, at: 0)
+                        self.mytable.reloadData()
+
                     }
                 }
                 

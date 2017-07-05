@@ -64,10 +64,12 @@ UINavigationControllerDelegate {
         let storageRef = Storage.storage().reference(withPath: path )   // Create reference with path
         let metadata = StorageMetadata()                                //Create metadata of Storage file
         metadata.contentType="image/jpeg"                               //Content type
+        if (petPic != nil){
         storageRef.putData(UIImageJPEGRepresentation(petPic!, 1.0)!, metadata: metadata) { (data,error) in //Upload file
             if error == nil {                       // if uploading not error, file is upload successfully
                 print("Upload success!")
                 //   self.AlertNotice(title: "Upload", message: "Upload Success")        //notice "Upload success"
+                //self.imgPet.image = UIImage(data: data!)
                 
             }
             else{
@@ -103,6 +105,7 @@ UINavigationControllerDelegate {
                 self.rootRef.child("sales_pet").updateChildValues(childupdate)
             }
         })
+        }
 
         
         

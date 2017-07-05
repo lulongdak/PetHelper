@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -59,10 +59,19 @@
                                     <segue destination="YzV-YO-HHC" kind="show" identifier="History" id="d4T-a2-fjO"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJk-wg-T9C">
+                                <rect key="frame" x="124" y="251" width="72" height="30"/>
+                                <state key="normal" title="Go to map"/>
+                                <connections>
+                                    <action selector="toMap:" destination="TAV-kQ-zCm" eventType="touchUpInside" id="VWK-OI-GGb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="qJk-wg-T9C" firstAttribute="top" secondItem="ZdZ-3T-cxB" secondAttribute="bottom" constant="20" id="320-Dt-3dw"/>
                             <constraint firstItem="ZdZ-3T-cxB" firstAttribute="centerX" secondItem="Ngl-fe-BGj" secondAttribute="centerX" id="GsP-Us-9Xj"/>
+                            <constraint firstItem="qJk-wg-T9C" firstAttribute="centerX" secondItem="Ngl-fe-BGj" secondAttribute="centerX" id="LZ6-Q5-oQR"/>
                             <constraint firstItem="8ms-si-jzD" firstAttribute="centerX" secondItem="Ngl-fe-BGj" secondAttribute="centerX" id="XHi-WF-moY"/>
                             <constraint firstItem="8ms-si-jzD" firstAttribute="top" secondItem="iep-1i-Mze" secondAttribute="bottom" constant="60" id="ZAE-l6-htf"/>
                             <constraint firstItem="ZdZ-3T-cxB" firstAttribute="top" secondItem="8ms-si-jzD" secondAttribute="bottom" constant="47" id="xGM-Vv-iFh"/>
@@ -231,7 +240,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eqS-Yk-vcE" id="YFy-Xo-e43">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>

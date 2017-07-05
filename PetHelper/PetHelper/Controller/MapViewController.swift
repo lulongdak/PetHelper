@@ -52,7 +52,14 @@ class MapViewController: UIViewController, UISearchBarDelegate, LocateOnTheMap, 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-                // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after loading the view, typically from a nib.
+        //let camera = GMSCameraPosition.camera(withLatitude: 10.77, longitude: 106.47, zoom: 6.0)
+        /*let mapView = GMSMapView.map(withFrame: .zero, camera: camera)
+        mapView.isMyLocationEnabled = true
+        self.view.addSubview(mapView)*/
+       // //self.googleMapsView = GMSMapView.map(withFrame: .zero, camera: camera)
+       // self.googleMapsView.isMyLocationEnabled = true
+        //Add marker
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -60,7 +67,19 @@ class MapViewController: UIViewController, UISearchBarDelegate, LocateOnTheMap, 
         
         self.googleMapsView = GMSMapView(frame: self.googleMapsContainer.frame)
         self.view.addSubview(self.googleMapsView)
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2DMake(10.7636005, 106.6773242)
+        marker.title = "Ho thi ky"
+        marker.snippet="HCM"
+        marker.map=self.googleMapsView
         
+        let marker1 = GMSMarker()
+
+        marker1.position = CLLocationCoordinate2DMake(10.763705, 106.6773242)
+        marker1.title = "Ho thi ky"
+        marker1.snippet="HCM"
+        marker1.map=self.googleMapsView
+
         searchResultController = SearchResultsController()
         searchResultController.delegate = self
         gmsFetcher = GMSAutocompleteFetcher()

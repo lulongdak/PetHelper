@@ -23,6 +23,11 @@ class FosterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func toMap(_ sender: Any) {
+        let storyboar = UIStoryboard(name: "MapView", bundle: Bundle.main)
+        let controller = storyboar.instantiateViewController(withIdentifier: "MapView")
+        self.present(controller, animated: true, completion: nil)
+    }
     @IBAction func btnLogOutPressed(_ sender: Any) {
         
         let firebaseAuth = Auth.auth()

@@ -21,7 +21,18 @@ class MainMemberViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func toMap(_ sender: Any) {
+        let storyboar = UIStoryboard(name: "MapView", bundle: Bundle.main)
+        let controller = storyboar.instantiateViewController(withIdentifier: "MapView")
+        self.present(controller, animated: true, completion: nil)
+    }
     
+    @IBAction func toAction(_ sender: Any) {
+        let storyboar = UIStoryboard(name: "MemberActionView", bundle: Bundle.main)
+        let controller = storyboar.instantiateViewController(withIdentifier: "MemberAction")
+        self.present(controller, animated: true, completion: nil)
+
+    }
 
     @IBAction func btnLogOut(_ sender: Any) {
         let firebaseAuth = Auth.auth()

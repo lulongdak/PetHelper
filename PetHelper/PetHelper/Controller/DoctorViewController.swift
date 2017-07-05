@@ -13,6 +13,11 @@ class DoctorViewController: UIViewController {
     /*@IBAction func Create_Deal_Action(_ sender: Any) {
         performSegue(withIdentifier: "CreateDeal", sender: nil)
     }*/
+    @IBAction func toMap(_ sender: Any) {
+        let storyboar = UIStoryboard(name: "MapView", bundle: Bundle.main)
+        let controller = storyboar.instantiateViewController(withIdentifier: "MapView")
+        self.present(controller, animated: true, completion: nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

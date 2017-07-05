@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -53,7 +53,14 @@
                                 <rect key="frame" x="120" y="216" width="80" height="30"/>
                                 <state key="normal" title="User Action"/>
                                 <connections>
-                                    <action selector="ToAction:" destination="5v0-fc-0pI" eventType="touchUpInside" id="IDf-ie-fm9"/>
+                                    <action selector="toAction:" destination="5v0-fc-0pI" eventType="touchUpInside" id="3wi-ly-suN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdJ-gc-eZV">
+                                <rect key="frame" x="124" y="266" width="72" height="30"/>
+                                <state key="normal" title="Go to map"/>
+                                <connections>
+                                    <action selector="toMap:" destination="5v0-fc-0pI" eventType="touchUpInside" id="tmF-IH-8Vf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -63,6 +70,8 @@
                             <constraint firstItem="UkH-rP-o2g" firstAttribute="centerX" secondItem="kQA-dr-xkQ" secondAttribute="centerX" id="8sG-bk-Gth"/>
                             <constraint firstItem="IYt-sd-aWg" firstAttribute="centerX" secondItem="kQA-dr-xkQ" secondAttribute="centerX" id="BYN-3w-c40"/>
                             <constraint firstItem="IYt-sd-aWg" firstAttribute="top" secondItem="OdG-eE-elG" secondAttribute="bottom" constant="92" id="I9z-zt-xNT"/>
+                            <constraint firstItem="tdJ-gc-eZV" firstAttribute="centerX" secondItem="kQA-dr-xkQ" secondAttribute="centerX" id="Jz8-q5-cqE"/>
+                            <constraint firstItem="tdJ-gc-eZV" firstAttribute="top" secondItem="UkH-rP-o2g" secondAttribute="bottom" constant="20" id="Rud-RM-cO7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="MENU" id="2sF-wV-rmZ">
@@ -344,7 +353,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YVl-MD-oxB" id="AxP-pb-uR4">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -387,7 +396,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="12y-Ue-Quy" id="a5S-6T-Ecp">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -405,6 +414,9 @@
                     <navigationItem key="navigationItem" title="DEAL" id="hZg-yv-KOz">
                         <barButtonItem key="leftBarButtonItem" image="back" id="etD-vg-7Vw"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="mytable" destination="S4H-dh-3ug" id="pC9-Jc-PyU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HXX-Yl-KnW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -430,7 +442,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7H8-Ys-Ta1" id="fPp-Nm-vpP">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -473,7 +485,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XFx-eF-EWe" id="4jg-zH-09C">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -516,7 +528,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eCt-6o-Xg6" id="pyY-ix-o42">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>

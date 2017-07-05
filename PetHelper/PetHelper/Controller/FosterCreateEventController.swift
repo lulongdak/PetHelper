@@ -38,7 +38,8 @@ class FosterCreateEventController: UIViewController {
         let txtstartdate = startdate.text!
         let txtdeal = dealcost.text!
         let txtanimal = animal.text!
-        if (txtqty.isNumber == false || txtdeal.isNumber == false){
+        if (txtqty.isNumber == false || txtdeal.isNumber == false)
+        {
             print("Quantity and deal must be a number");
         }
         else

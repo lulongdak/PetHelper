@@ -131,6 +131,7 @@ UINavigationControllerDelegate {
             storageRef.putData(UIImageJPEGRepresentation(profilePic!, 1.0)!, metadata: metadata) { (data,error) in //Upload file
                 if error == nil {                       // if uploading not error, file is upload successfully
                     print("Upload success!")
+                    
                     //   self.AlertNotice(title: "Upload", message: "Upload Success")        //notice "Upload success"
                 
                 }
@@ -182,6 +183,9 @@ UINavigationControllerDelegate {
         present(alertController, animated: true, completion: nil)
     }
     
+    @IBAction func back(_ sender: Any) {
+         self.navigationController?.popViewController(animated: true)
+    }
     
     
     /*

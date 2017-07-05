@@ -126,7 +126,7 @@
         <!--HISTORY INFO-->
         <scene sceneID="fKy-hW-L80">
             <objects>
-                <viewController id="85Z-09-CWf" sceneMemberID="viewController">
+                <viewController id="85Z-09-CWf" customClass="DoctorHistoryInfoController" customModule="PetHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GEL-2O-MvI"/>
                         <viewControllerLayoutGuide type="bottom" id="aNi-VA-1yG"/>
@@ -264,8 +264,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="HISTORY INFO" id="Q7c-2D-wMD">
-                        <barButtonItem key="leftBarButtonItem" image="back" id="R6e-i6-lxu"/>
+                        <barButtonItem key="leftBarButtonItem" image="back" id="R6e-i6-lxu">
+                            <connections>
+                                <action selector="back:" destination="85Z-09-CWf" id="BJv-pM-bP6"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="txfAnimal" destination="i1l-CX-Z1l" id="xnD-2n-N37"/>
+                        <outlet property="txfCost" destination="5Mb-FN-OuK" id="8s4-L7-1kQ"/>
+                        <outlet property="txfEndDate" destination="JVP-Ju-fBs" id="6EZ-iB-kUY"/>
+                        <outlet property="txfQty" destination="fZ0-Hu-xjy" id="nh9-tf-65p"/>
+                        <outlet property="txfStartDate" destination="V7s-E7-4G5" id="dfv-SW-UzX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ihX-Yq-Xim" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

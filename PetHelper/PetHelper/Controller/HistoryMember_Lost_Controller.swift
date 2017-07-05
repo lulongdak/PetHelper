@@ -22,6 +22,10 @@ class HistoryMember_Lost_Controller: UIViewController {
     }
     
 
+    @IBAction func back(_ sender: Any) {
+         self.navigationController?.popViewController(animated: true)
+    }
+
     /*
     // MARK: - Navigation
 

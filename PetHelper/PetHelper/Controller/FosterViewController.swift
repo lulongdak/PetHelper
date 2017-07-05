@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+
 
 class FosterViewController: UIViewController {
 
@@ -21,6 +23,23 @@ class FosterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func btnLogOutPressed(_ sender: Any) {
+        
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+            //return to login view
+            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+            let controller = storyboard.instantiateViewController(withIdentifier: "Main")
+            self.present(controller, animated: true, completion: nil)
+            
+            
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+
+        
+    }
 
     /*
     // MARK: - Navigation

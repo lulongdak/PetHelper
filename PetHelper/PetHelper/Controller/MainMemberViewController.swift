@@ -1,22 +1,19 @@
 //
-//  DoctorViewController.swift
+//  MemberViewController.swift
 //  PetHelper
 //
-//  Created by Lu Tam Long on 6/26/17.
+//  Created by Allen on 7/5/17.
 //  Copyright © 2017 SUAY555. All rights reserved.
 //
 
 import UIKit
 import Firebase
 
-class DoctorViewController: UIViewController {
-    /*@IBAction func Create_Deal_Action(_ sender: Any) {
-        performSegue(withIdentifier: "CreateDeal", sender: nil)
-    }*/
+class MainMemberViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.barTintColor = UIColor(red: 62/255, green: 167/255, blue: 53/255, alpha: 1)
+
         // Do any additional setup after loading the view.
     }
 
@@ -25,9 +22,8 @@ class DoctorViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    @IBAction func btnLogOutPressed(_ sender: Any) {
-        
+
+    @IBAction func btnLogOut(_ sender: Any) {
         let firebaseAuth = Auth.auth()
         do {
             try firebaseAuth.signOut()
@@ -40,10 +36,8 @@ class DoctorViewController: UIViewController {
         } catch let signOutError as NSError {
             print ("Error signing out: %@", signOutError)
         }
-        
-    }
-    
 
+    }
     /*
     // MARK: - Navigation
 

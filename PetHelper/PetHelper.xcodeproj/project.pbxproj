@@ -17,6 +17,7 @@
 		9FAC0C251F0BE50C00B2F6D7 /* DoctorCheckup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAC0C241F0BE50C00B2F6D7 /* DoctorCheckup.swift */; };
 		9FAC0C271F0BF0DD00B2F6D7 /* InfoDealController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAC0C261F0BF0DD00B2F6D7 /* InfoDealController.swift */; };
 		9FAC90DF1F037E86008149F5 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAC90DE1F037E86008149F5 /* UserModel.swift */; };
+		9FFD5FD01F0D1A0400CDDB01 /* MainMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFD5FCF1F0D1A0400CDDB01 /* MainMemberViewController.swift */; };
 		FE1B0D3D1F016D4E00BCB506 /* DoctorView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE1B0D3C1F016D4E00BCB506 /* DoctorView.storyboard */; };
 		FE1B0D3F1F016FEC00BCB506 /* DoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1B0D3E1F016FEC00BCB506 /* DoctorViewController.swift */; };
 		FE1B0D411F01722000BCB506 /* DoctorCreateDealController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1B0D401F01722000BCB506 /* DoctorCreateDealController.swift */; };
@@ -67,6 +68,7 @@
 		9FAC0C261F0BF0DD00B2F6D7 /* InfoDealController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoDealController.swift; sourceTree = "<group>"; };
 		9FAC90DB1F035BED008149F5 /* PetHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PetHelper.entitlements; sourceTree = "<group>"; };
 		9FAC90DE1F037E86008149F5 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserModel.swift; path = PetHelper/Resources/UserModel.swift; sourceTree = SOURCE_ROOT; };
+		9FFD5FCF1F0D1A0400CDDB01 /* MainMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMemberViewController.swift; sourceTree = "<group>"; };
 		A0502D16141E9B53A755CFC9 /* Pods-PetHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetHelper/Pods-PetHelper.release.xcconfig"; sourceTree = "<group>"; };
 		FE10C3311F010FBC00AAF00A /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		FE1B0D3C1F016D4E00BCB506 /* DoctorView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DoctorView.storyboard; sourceTree = "<group>"; };
@@ -174,7 +176,7 @@
 				9F48623A1F08DD6700B3F956 /* SaleInfoController.swift */,
 				9F48623C1F08DD7600B3F956 /* FosterController.swift */,
 				9FAC0C261F0BF0DD00B2F6D7 /* InfoDealController.swift */,
-				FEDA3CDF1F0D1DC900CCD9FC /* MemberViewController.swift */,
+				9FFD5FCF1F0D1A0400CDDB01 /* MainMemberViewController.swift */,
 			);
 			name = Member;
 			sourceTree = "<group>";
@@ -230,9 +232,9 @@
 				FE61822F1F02117F0056D95D /* Member */,
 				FE61822E1F02116F0056D95D /* Foster */,
 				FE61822D1F0211580056D95D /* Doctor */,
-				FEBA1B1A1F00012B00C66055 /* MapViewController.swift */,
 				FEBA1B1C1F001C2300C66055 /* SearchResultsController.swift */,
 				FEE7C7801EEC4D9F00D75C03 /* ViewController.swift */,
+				FEBA1B1A1F00012B00C66055 /* MapViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -428,7 +430,7 @@
 				FE6182261F020BF50056D95D /* FosterHistoryInfoController.swift in Sources */,
 				FE1B0D431F0198B500BCB506 /* DoctorHistoryController.swift in Sources */,
 				FE9F090B1F0C03C800BED90E /* HistoryMember_Deal_Controller.swift in Sources */,
-				FEDA3CE01F0D1DC900CCD9FC /* MemberViewController.swift in Sources */,
+				9FFD5FD01F0D1A0400CDDB01 /* MainMemberViewController.swift in Sources */,
 				FE61822C1F020E2A0056D95D /* FosterHistoryCell.swift in Sources */,
 				9F48623D1F08DD7600B3F956 /* FosterController.swift in Sources */,
 				FEE7C7811EEC4D9F00D75C03 /* ViewController.swift in Sources */,

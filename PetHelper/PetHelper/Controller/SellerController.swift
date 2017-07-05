@@ -58,57 +58,74 @@ UINavigationControllerDelegate {
         
         
         
+        if (txfAge.text!.isNumber == false || txfAmount.text!.isNumber == false)
+        {
+            print("Quantity and deal must be a number");
+        }
+        else
+        {
+            self.navigationController?.popViewController(animated: true)
+        }
+
+        
          let key = rootRef.child("sales_pet").child(Auth.auth().currentUser!.uid).childByAutoId().key
         
         let path = "PetSale/" + Auth.auth().currentUser!.uid + key + "/petpic.jpg"          //path save file in Storage, name folder is your ID user
+        
         let storageRef = Storage.storage().reference(withPath: path )   // Create reference with path
         let metadata = StorageMetadata()                                //Create metadata of Storage file
         metadata.contentType="image/jpeg"                               //Content type
-        if (petPic != nil){
-        storageRef.putData(UIImageJPEGRepresentation(petPic!, 1.0)!, metadata: metadata) { (data,error) in //Upload file
-            if error == nil {                       // if uploading not error, file is upload successfully
+        
+       if(petPic == nil)
+       {
+            self.AlertNotice(title: "Error", message: "Please select image!")
+            self.navigationController?.popViewController(animated: true)
+        
+        }
+       else
+       {
+        
+            storageRef.putData(UIImageJPEGRepresentation(petPic!, 1.0)!, metadata: metadata) { (data,error) in //Upload file
+                if error == nil {                       // if uploading not error, file is upload successfully
                 print("Upload success!")
                 //   self.AlertNotice(title: "Upload", message: "Upload Success")        //notice "Upload success"
                 //self.imgPet.image = UIImage(data: data!)
                 
-            }
-            else{
-                print(error?.localizedDescription ?? "Error")
-                print("Upload failed!")
+                }
+                else{
+                    print(error?.localizedDescription ?? "Error")
+                    print("Upload failed!")
                 //  self.AlertNotice(title: "Upload", message: (error?.localizedDescription)!)
-            }
+                }
             
-        }
-       
-        
-        let condition = rootRef.child("user_info").child(Auth.auth().currentUser!.uid)
-        //get seller address
-        condition.observe( DataEventType.value, with: { (snapshot: DataSnapshot) in
-            
-            if let user = snapshot.value as? [String: AnyObject]{
-                let info = UserModel()
-                info.setValuesForKeys(user)
-                let userAddress = info.address
-                
-                //update information
-                let post = ["petAge": self.txfAge.text!,
-                            "saleUserID": Auth.auth().currentUser!.uid,
-                            "saleAddress": userAddress,
-                            "salePrice": self.txfPrice.text!,
-                            "saleAmount": self.txfAmount.text!,
-                            "saleSpecies": self.txfSpecies.text!,
-                            "saleRace": self.txfRace.text!,
-                            "expDate": self.txfExpDate.text!,
-                            "orderStatus": "false",
-                            "petPic": path]
-                let childupdate = ["/\(key)": post]
-                self.rootRef.child("sales_pet").updateChildValues(childupdate)
             }
-        })
+        
+        
+            let condition = rootRef.child("user_info").child(Auth.auth().currentUser!.uid)
+            //get seller address
+            condition.observe( DataEventType.value, with: { (snapshot: DataSnapshot) in
+            
+                if let user = snapshot.value as? [String: AnyObject]{
+                    let info = UserModel()
+                    info.setValuesForKeys(user)
+                    let userAddress = info.address
+                    
+                    //update information
+                    let post = ["petAge": self.txfAge.text!,
+                                "saleUserID": Auth.auth().currentUser!.uid,
+                                "saleAddress": userAddress,
+                                "salePrice": self.txfPrice.text!,
+                                "saleAmount": self.txfAmount.text!,
+                                "saleSpecies": self.txfSpecies.text!,
+                                "saleRace": self.txfRace.text!,
+                                "expDate": self.txfExpDate.text!,
+                                "orderStatus": "false",
+                                "petPic": path]
+                    let childupdate = ["/\(key)": post]
+                    self.rootRef.child("sales_pet").updateChildValues(childupdate)
+                }
+            })
         }
-
-        
-        
     }
     
     
@@ -130,8 +147,8 @@ UINavigationControllerDelegate {
         let chosenPic = info[UIImagePickerControllerOriginalImage] as? UIImage
         
         petPic = chosenPic
-        imgPet.contentMode = .scaleAspectFit
-        imgPet.image = chosenPic
+        self.imgPet.contentMode = .scaleAspectFit
+        self.imgPet.image = chosenPic
         
         dismiss(animated:true, completion: nil) //5
     }

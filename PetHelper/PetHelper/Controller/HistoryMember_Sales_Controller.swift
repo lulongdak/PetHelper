@@ -18,6 +18,7 @@ class HistoryMember_Sales_Controller: UIViewController,UITableViewDelegate,UITab
 
         // Do any additional setup after loading the view.
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

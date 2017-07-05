@@ -7,12 +7,53 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
+import FirebaseStorage
+import Darwin
 
 class DoctorHistoryInfoController: UIViewController {
+    
+    
+    @IBOutlet weak var txfQty: UITextField!
+    
+    @IBOutlet weak var txfStartDate: UITextField!
+    
+    @IBOutlet weak var txfCost: UITextField!
+    
+    @IBOutlet weak var txfEndDate: UITextField!
+
+    @IBOutlet weak var txfAnimal: UITextField!
+    
+    
+    var sessionID: String?
+    
+    let rootRef = Database.database().reference()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.barTintColor = UIColor(red: 62/255, green: 167/255, blue: 53/255, alpha: 1)
+        
+        //insert sessionID here
+        //sessionID =
+        
+        //show existing info
+        let condition = rootRef.child("surgery_pet").child(Auth.auth().currentUser!.uid).child(sessionID!)
+        
+        condition.observe( DataEventType.value, with: { (snapshot: DataSnapshot) in
+            
+            if let user = snapshot.value as? [String: AnyObject]{
+                let info = DoctorCheckup()
+                info.setValuesForKeys(user)
+                self.txfQty.text = info.patientQuantity
+                self.txfStartDate.text = info.startDate
+                self.txfEndDate.text = info.endDate
+                self.txfCost.text = info.cost
+                self.txfAnimal.text = info.patientSpecies
+            }
+        })
+
         // Do any additional setup after loading the view.
     }
 
@@ -21,6 +62,9 @@ class DoctorHistoryInfoController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func back(_ sender: Any) {
+         self.navigationController?.popViewController(animated: true)
+    }
 
     /*
     // MARK: - Navigation

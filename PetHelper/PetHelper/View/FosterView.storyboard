@@ -281,8 +281,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="HISTORY INFO" id="qYV-3J-jD0">
-                        <barButtonItem key="leftBarButtonItem" image="back" id="UzO-mf-UFk"/>
+                        <barButtonItem key="leftBarButtonItem" image="back" id="UzO-mf-UFk">
+                            <connections>
+                                <action selector="back:" destination="fgk-nf-7c9" id="Xcg-2s-faI"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="txfAnimal" destination="orD-rf-XYC" id="DAp-OA-889"/>
+                        <outlet property="txfCost" destination="Iqi-Jn-GDA" id="7LT-1s-C3t"/>
+                        <outlet property="txfEndDate" destination="yyj-SI-t7a" id="Yh6-Ll-4E2"/>
+                        <outlet property="txfQty" destination="qsf-Fa-OaA" id="J2z-6J-7Yb"/>
+                        <outlet property="txfStartDate" destination="LGH-2d-vw9" id="w9V-iC-kv7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DXT-zg-ppe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

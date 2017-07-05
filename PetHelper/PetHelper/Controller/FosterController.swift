@@ -71,7 +71,21 @@ class FosterController: UIViewController {
     
 
     @IBAction func btnGet(_ sender: Any) {
+        if (txfBuyQty.text!.isNumber == false)
+        {
+            print("Quantity and deal must be a number");
+        }
+        else
+        {
+            self.navigationController?.popViewController(animated: true)
+        }
     }
+    
+    
+    @IBAction func back(_ sender: Any) {
+         self.navigationController?.popViewController(animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
